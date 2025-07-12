@@ -46,7 +46,7 @@ In this project we will be using the IIC-OSIC-TOOLS docker (https://github.com/i
 ## Getting Started: Team Environment Setup
 
 ### GitHub Collaborative Team Workflow
-For the detailed branching and pull-request process see **[docs/team_workflow.md](docs/team_workflow.md)**.
+For the detailed branching and pull-request process see **[team_workflow.md](team_workflow.md)**.
 
 In brief:
 - The **team leader** creates the repository from this template and adds teammates as collaborators.
@@ -69,7 +69,7 @@ This repository is set up as a GitHub template. Using the template feature gives
    - Choose public or private
 5. Click **"Create repository"**
 
-![GitHub "Use this template" button](docs/screenshots/using_github_template.png)
+![GitHub "Use this template" button](screenshots/using_github_template.png)
 
 **Clone your new repository to your local machine using GitHub Desktop:**
 1. Open GitHub Desktop
@@ -77,7 +77,7 @@ This repository is set up as a GitHub template. Using the template feature gives
 3. Select your newly created repository
 4. Choose your local directory and click "Clone"
 
-![GitHub Desktop clone dialog](docs/screenshots/clone_your_repo.png)
+![GitHub Desktop clone dialog](screenshots/clone_your_repo.png)
 
 ### Step 2: Launch the Docker Container
 
@@ -103,7 +103,7 @@ If you are familiar with git bash, feel free to use `start_chipathon_vnc.sh`.
 
 Now the script pulls the IIC-OSIC-TOOLS *chipathon* image. Have a coffee.
 
-![Container startup messages](docs/screenshots/docker_pull.png)
+![Container startup messages](screenshots/docker_pull.png)
 
 ### Step 3: Access the Design Environment in the Docker Container
 
@@ -134,7 +134,7 @@ Once you're in the VNC session, you can start running the design tools in the co
 2. Select "Terminal Emulator" (or similar option)
 3. You should automatically be in the `/foss/designs` directory
 
-![Desktop context menu with Terminal Emulator option](docs/screenshots/open_a_terminal.png)
+![Desktop context menu with Terminal Emulator option](screenshots/open_a_terminal.png)
 
 ### Step 5: Launch Design Tools
 
@@ -148,9 +148,9 @@ xschem
 ```
 You should see the Xschem GUI with available devices from `gf180mcu` and their testbenches. Xschem has UI buttons to netlist and simulate your schematic. You can display results in Xschem or GAW (an external viewer).
 
-See the recommended schematic workflow **[docs/schematic_workflow.md](docs/schematic_workflow.md)**
+See the recommended schematic workflow **[schematic_workflow.md](schematic_workflow.md)**
 
-![Xschem interface with PDK libraries loaded](docs/screenshots/start_xschem.png)
+![Xschem interface with PDK libraries loaded](screenshots/start_xschem.png)
 
 #### Layout
 
@@ -158,9 +158,9 @@ Launch Klayout for layout design:
 ```bash
 ./scripts/klayout_start.sh
 ```
-See the recommended layout workflow with Klayout **[docs/layout_workflow.md](docs/layout_workflow.md)**
+See the recommended layout workflow with Klayout **[layout_workflow.md](layout_workflow.md)**
 
-![KLayout](docs/screenshots/start_klayout.png)
+![KLayout](screenshots/start_klayout.png)
 
 
 #### Other Tools
