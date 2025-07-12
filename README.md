@@ -1,8 +1,8 @@
 # SSCS Chipathon 2025 - Digital Building Blocks: OSU Library Extension
 
 **Track:** Digital Building Blocks  
-**Team:** [Your Team Name Here]  
-**Members:** [List of Team Members]
+**Team:** CHIPABROS  
+**Members:** Karunia Muda Kurniawan, M. Ahza Bayanaka Wijanarko, Akmal Hafizh Musyaffa, and M. Azfar A. Yusup
 
 ---
 
