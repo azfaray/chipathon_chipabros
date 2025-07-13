@@ -51,7 +51,8 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 * **Logic Function:** `Y = ~((A | B | C) & (D | E | F))`
 * **Design:** Implemented as a single-stage, **12-transistor complementary CMOS complex gate**, leveraging CMOS duality to create a compact and performant layout.
 * **Schematic:**
-    ![OAI33 Schematic](docs/images/OAI33.png)
+
+  ![OAI33 Schematic](docs/images/OAI33.png)
 
 * **Target Specifications:**
 
