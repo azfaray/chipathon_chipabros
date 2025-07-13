@@ -126,11 +126,9 @@ Our final validation will involve a side-by-side comparison of a benchmark circu
 
 | Member     | Task Distribution |
 |------------|-------------------|
-| **Karunia Muda Kurniawan** |                   |
-| **M. Ahza Bayanaka Wijanarko** |                   |
-| **Akmal Hafizh Musyaffa** |                   |
-| **M. Azfar A. Yusup** |                   |
+| **Karunia Muda Kurniawan** | AOI33 design schematic and layout |
+| **M. Ahza Bayanaka Wijanarko** | OAI33 design schematic and layout |
+| **Akmal Hafizh Musyaffa** | MUX4 design schematic and layout |
+| **M. Azfar A. Yusup** | MUX4 design schematic and layout |
 
 ---
-
-**Status:** In Progress 🚧
