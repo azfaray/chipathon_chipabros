@@ -49,6 +49,8 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 
 ### Target Specification
 
+![Target Specification](docs/images/targetsspec.png)
+
 ---
 
 ## 4. Application & Impact
