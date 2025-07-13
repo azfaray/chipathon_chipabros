@@ -36,9 +36,10 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
     ![AOI33 Schematic](docs/images/AOI33.png)
 
 * **Target Specifications:**
+
 | Specification | Target Value |
 | :--- | :--- |
-| Input Capcitance | `test` |
+| Input Capacitance | `test` |
 | Leakage Power | `test` |
 | Area | `test` |
 | Delay @FO4 | `test` |
@@ -50,9 +51,10 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
     ![OAI33 Schematic](docs/images/OAI33.png)
 
 * **Target Specifications:**
+
 | Specification | Target Value |
 | :--- | :--- |
-| Input Capcitance | `test` |
+| Input Capacitance | `test` |
 | Leakage Power | `test` |
 | Area | `test` |
 | Delay @FO4 | `test` |
@@ -64,9 +66,10 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
     ![MUX4 Schematic](docs/images/MUX4.png)
 
 * **Target Specifications:**
+
 | Specification | Target Value |
 | :--- | :--- |
-| Input Capcitance | `test` |
+| Input Capacitance | `test` |
 | Leakage Power | `test` |
 | Area | `test` |
 | Delay @FO4 | `test` |
