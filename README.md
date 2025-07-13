@@ -39,6 +39,9 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 
 | Specification | Target Value |
 | :--- | :--- |
+| Drive Strength | `test` |
+| Track | `test` |
+| VDD | `test` |
 | Input Capacitance | `test` |
 | Leakage Power | `test` |
 | Area | `test` |
@@ -54,6 +57,9 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 
 | Specification | Target Value |
 | :--- | :--- |
+| Drive Strength | `test` |
+| Track | `test` |
+| VDD | `test` |
 | Input Capacitance | `test` |
 | Leakage Power | `test` |
 | Area | `test` |
