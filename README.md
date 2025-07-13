@@ -47,6 +47,8 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 * **Schematic:**
     ![MUX4 Schematic](docs/images/MUX4.png)
 
+### Target Specification
+
 ---
 
 ## 4. Application & Impact
