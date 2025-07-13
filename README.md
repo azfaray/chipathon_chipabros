@@ -30,13 +30,13 @@ By providing these cells as single, optimized units, we enable synthesis tools t
 Our design philosophy is centered on creating efficient, single-stage complex gates to maximize PPA gains.
 
 ### AOI33 (AND-OR-Invert)
-* **Logic Function:** `Y = ~((x0 & x1 & x2) | (x3 & x4 & x5))`
+* **Logic Function:** `Y = ~((A & B & C) | (D & E & F))`
 * **Design:** Implemented as a single-stage, **12-transistor complementary CMOS complex gate**. This design is vastly more efficient than a multi-gate equivalent, which would require ~24 transistors and introduce additional delay.
 * **Schematic:**
-![AOI33 Schematic](docs/images/AOI33.png)
+    ![AOI33 Schematic](docs/images/AOI33.png)
 
 ### OAI33 (OR-AND-Invert)
-* **Logic Function:** `Y = ~((x0 | x1 | x2) & (x3 | x4 | x5))`
+* **Logic Function:** `Y = ~((A | B | C) & (D | E | F))`
 * **Design:** Implemented as a single-stage, **12-transistor complementary CMOS complex gate**, leveraging CMOS duality to create a compact and performant layout.
 * **Schematic:**
     ![OAI33 Schematic](docs/images/OAI33.png)
