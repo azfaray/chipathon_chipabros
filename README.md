@@ -42,10 +42,10 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 | Drive Strength | `1x` |
 | Track | `9T` |
 | VDD | `3.3 V` |
-| Input Capacitance | `&le; 0.01 pF` |
-| Leakage Power | `&le; 0.5 nW` |
-| Area | `&le; 50&micro;m&sup2;` |
-| Delay @FO4 | `&le; 0.3 ns` |
+| Input Capacitance | &le; 0.01 pF |
+| Leakage Power | &le; 0.5 nW |
+| Area | &le; 50&micro;m&sup2; |
+| Delay @FO4 | &le; 0.3 ns |
 
 ### OAI33 (OR-AND-Invert)
 * **Logic Function:** `Y = ~((A | B | C) & (D | E | F))`
@@ -60,10 +60,10 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 | Drive Strength | `1x` |
 | Track | `9T` |
 | VDD | `3.3 V` |
-| Input Capacitance | `&le; 0.01 pF` |
-| Leakage Power | `&le; 0.5 nW` |
-| Area | `&le; 50&micro;m&sup2;` |
-| Delay @FO4 | `&le; 0.3 ns` |
+| Input Capacitance | &le; 0.01 pF |
+| Leakage Power | &le; 0.5 nW |
+| Area | &le; 50&micro;m&sup2; |
+| Delay @FO4 | &le; 0.3 ns |
 
 ### MUX4 (4-to-1 Multiplexer)
 * **Logic Function:** Selects one of four data inputs (`x0`-`x3`) based on two select lines (`C0`, `C1`).
@@ -78,10 +78,10 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 | Drive Strength | `1x` |
 | Track | `9T` |
 | VDD | `3.3 V` |
-| Input Capacitance | `&le; 0.01 pF` |
-| Leakage Power | `&le; 0.5 nW` |
-| Area | `&le; 60&micro;m&sup2;` |
-| Delay @FO4 | `&le; 0.3 ns` |
+| Input Capacitance | &le; 0.01 pF |
+| Leakage Power | &le; 0.5 nW |
+| Area | &le; 60&micro;m&sup2; |
+| Delay @FO4 | &le; 0.3 ns |
 
 ---
 
