@@ -110,7 +110,7 @@ Our final validation will involve a side-by-side comparison of a benchmark circu
 
 ## 6. Timeline
 
-![Project Timeline](docs/images/timeline.png)
+![Project Timeline](docs/images/timelinefix.png)
 
 ---
 
