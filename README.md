@@ -12,6 +12,8 @@ This project is our team's contribution to the **IEEE SSCS Chipathon 2025**. We 
 
 Our objective is to design, characterize, and contribute a set of new, high-value complex logic gates. The addition of these cells will enhance the library's functionality, allowing synthesis tools to produce designs with improved Power, Performance, and Area (PPA) metrics.
 
+---
+
 ## 2. Project Goal
 
 We aim to enhance the OSU standard cell library by designing and adding the following cells:
@@ -20,6 +22,8 @@ We aim to enhance the OSU standard cell library by designing and adding the foll
 * `MUX4` (4-to-1 Multiplexer)
 
 By providing these cells as single, optimized units, we enable synthesis tools to bypass the inefficient process of constructing them from smaller, basic gates. This leads to significant improvements in transistor count, circuit delay, and overall layout density.
+
+---
 
 ## 3. Proposed Cell Designs
 
@@ -43,6 +47,8 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 * **Schematic:**
     ![MUX4 Schematic](docs/images/MUX4.png)
 
+---
+
 ## 4. Application & Impact
 
 These cells are fundamental building blocks in modern digital design and are widely applied in:
@@ -52,6 +58,8 @@ These cells are fundamental building blocks in modern digital design and are wid
 
 By contributing these optimized cells, we anticipate that future projects using the OSU library will achieve more compact layouts and higher clock speeds.
 
+---
+
 ## 5. Tools and Methodology
 
 Our workflow utilizes a combination of open-source and industry-standard EDA tools.
@@ -59,9 +67,30 @@ Our workflow utilizes a combination of open-source and industry-standard EDA too
 * **Schematic Entry:** Xschem
 * **Layout & Verification:** Magic, KLayout, Netgen
 * **Simulation:** NGSpice
-* **Characterization:** Synopsys Cloud tools will be used to generate the `.lib` (Liberty) timing and power models required for the digital synthesis and place-and-route flow.
+* **Characterization:** We will use **Charlib**, an open-source library characterization tool, to generate the `.lib` (Liberty) timing and power models for our cells.
 
 Our final validation will involve a side-by-side comparison of a benchmark circuit synthesized with the original OSU library versus our new, augmented library to quantitatively measure the PPA improvements.
+
+---
+
+---
+
+## 6. Timeline
+
+![Project Timeline](docs/images/timeline.png)
+
+---
+
+---
+
+## 7. Work Distribution
+
+| Member     | Task Distribution |
+|------------|-------------------|
+| **Member 1** |                   |
+| **Member 2** |                   |
+| **Member 3** |                   |
+| **Member 4** |                   |
 
 ---
 
