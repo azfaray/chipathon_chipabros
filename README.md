@@ -89,10 +89,10 @@ Our final validation will involve a side-by-side comparison of a benchmark circu
 
 | Member     | Task Distribution |
 |------------|-------------------|
-| **Member 1** |                   |
-| **Member 2** |                   |
-| **Member 3** |                   |
-| **Member 4** |                   |
+| **Karunia Muda Kurniawan** |                   |
+| **M. Ahza Bayanak Wijanarko** |                   |
+| **Akmal Hafizh Musyaffa** |                   |
+| **M. Azfar A. Yusup** |                   |
 
 ---
 
