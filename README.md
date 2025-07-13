@@ -35,11 +35,27 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 * **Schematic:**
     ![AOI33 Schematic](docs/images/AOI33.png)
 
+**Target Specifications:**
+| Specification | Target Value |
+| :--- | :--- |
+| Input Capcitance | `test` |
+| Leakage Power | `test` |
+| Area | `test` |
+| Delay @FO4 | `test` |
+
 ### OAI33 (OR-AND-Invert)
 * **Logic Function:** `Y = ~((A | B | C) & (D | E | F))`
 * **Design:** Implemented as a single-stage, **12-transistor complementary CMOS complex gate**, leveraging CMOS duality to create a compact and performant layout.
 * **Schematic:**
     ![OAI33 Schematic](docs/images/OAI33.png)
+
+**Target Specifications:**
+| Specification | Target Value |
+| :--- | :--- |
+| Input Capcitance | `test` |
+| Leakage Power | `test` |
+| Area | `test` |
+| Delay @FO4 | `test` |
 
 ### MUX4 (4-to-1 Multiplexer)
 * **Logic Function:** Selects one of four data inputs (`x0`-`x3`) based on two select lines (`C0`, `C1`).
@@ -47,9 +63,13 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 * **Schematic:**
     ![MUX4 Schematic](docs/images/MUX4.png)
 
-### Target Specification
-
-
+**Target Specifications:**
+| Specification | Target Value |
+| :--- | :--- |
+| Input Capcitance | `test` |
+| Leakage Power | `test` |
+| Area | `test` |
+| Delay @FO4 | `test` |
 
 ---
 
