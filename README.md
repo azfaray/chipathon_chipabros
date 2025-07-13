@@ -33,7 +33,8 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 * **Logic Function:** `Y = ~((A & B & C) | (D & E & F))`
 * **Design:** Implemented as a single-stage, **12-transistor complementary CMOS complex gate**. This design is vastly more efficient than a multi-gate equivalent, which would require ~24 transistors and introduce additional delay.
 * **Schematic:**
-    ![AOI33 Schematic](docs/images/AOI33.png)
+
+  ![AOI33 Schematic](docs/images/AOI33.png)
 
 * **Target Specifications:**
 
@@ -70,7 +71,8 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 * **Logic Function:** Selects one of four data inputs (`x0`-`x3`) based on two select lines (`C0`, `C1`).
 * **Design:** Implemented using **Transmission Gate Logic (TGL)**. This topology was chosen for its minimal transistor count, excellent performance, and its ability to pass a full rail-to-rail voltage swing, which is a critical requirement for robust standard cell design.
 * **Schematic:**
-    ![MUX4 Schematic](docs/images/MUX4.png)
+
+  ![MUX4 Schematic](docs/images/MUX4.png)
 
 * **Target Specifications:**
 
