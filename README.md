@@ -35,7 +35,7 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 * **Schematic:**
     ![AOI33 Schematic](docs/images/AOI33.png)
 
-**Target Specifications:**
+* **Target Specifications:**
 | Specification | Target Value |
 | :--- | :--- |
 | Input Capcitance | `test` |
@@ -49,7 +49,7 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 * **Schematic:**
     ![OAI33 Schematic](docs/images/OAI33.png)
 
-**Target Specifications:**
+* **Target Specifications:**
 | Specification | Target Value |
 | :--- | :--- |
 | Input Capcitance | `test` |
@@ -63,7 +63,7 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 * **Schematic:**
     ![MUX4 Schematic](docs/images/MUX4.png)
 
-**Target Specifications:**
+* **Target Specifications:**
 | Specification | Target Value |
 | :--- | :--- |
 | Input Capcitance | `test` |
