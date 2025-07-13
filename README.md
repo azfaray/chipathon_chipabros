@@ -2,7 +2,7 @@
 
 **Track:** Digital Building Blocks  
 **Team:** CHIPABROS  
-**Members:** Karunia Muda Kurniawan, M. Ahza Bayanaka Wijanarko, Akmal Hafizh Musyaffa, and M. Azfar A. Yusup
+**Members:** Karunia Muda Kurniawan (Team Leader), M. Ahza Bayanaka Wijanarko, Akmal Hafizh Musyaffa, and M. Azfar A. Yusup
 
 ---
 
