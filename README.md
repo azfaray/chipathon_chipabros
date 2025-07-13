@@ -30,19 +30,19 @@ By providing these cells as single, optimized units, we enable synthesis tools t
 Our design philosophy is centered on creating efficient, single-stage complex gates to maximize PPA gains.
 
 ### AOI33 (AND-OR-Invert)
-* **Logic Function:** `Y = ~((A0 & A1 & A2) | (B0 & B1 & B2))`
-* **Design:** Implemented as a single-stage, **12-transistor (12T) complementary CMOS complex gate**. This design is vastly more efficient than a multi-gate equivalent, which would require ~24 transistors and introduce additional delay.
+* **Logic Function:** `Y = ~((x0 & x1 & x2) | (x3 & x4 & x5))`
+* **Design:** Implemented as a single-stage, **12-transistor complementary CMOS complex gate**. This design is vastly more efficient than a multi-gate equivalent, which would require ~24 transistors and introduce additional delay.
 * **Schematic:**
     ![AOI33 Schematic](docs/images/AOI33.png)
 
 ### OAI33 (OR-AND-Invert)
-* **Logic Function:** `Y = ~((A0 | A1 | A2) & (B0 | B1 | B2))`
-* **Design:** Implemented as a single-stage, **12-transistor (12T) complementary CMOS complex gate**, leveraging CMOS duality to create a compact and performant layout.
+* **Logic Function:** `Y = ~((x0 | x1 | x2) & (x3 | x4 | x5))`
+* **Design:** Implemented as a single-stage, **12-transistor complementary CMOS complex gate**, leveraging CMOS duality to create a compact and performant layout.
 * **Schematic:**
     ![OAI33 Schematic](docs/images/OAI33.png)
 
 ### MUX4 (4-to-1 Multiplexer)
-* **Logic Function:** Selects one of four data inputs (`D0`-`D3`) based on two select lines (`S0`, `S1`).
+* **Logic Function:** Selects one of four data inputs (`x0`-`x3`) based on two select lines (`C0`, `C1`).
 * **Design:** Implemented using **Transmission Gate Logic (TGL)**. This topology was chosen for its minimal transistor count, excellent performance, and its ability to pass a full rail-to-rail voltage swing, which is a critical requirement for robust standard cell design.
 * **Schematic:**
     ![MUX4 Schematic](docs/images/MUX4.png)
