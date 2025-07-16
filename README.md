@@ -70,7 +70,7 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 ### MUX4 (4-to-1 Multiplexer)
 * **Logic Function:** Selects one of four data inputs (`x0`-`x3`) based on two select lines (`C0`, `C1`).
 * **Design:** Implemented using **Transmission Gate Logic (TGL)**. This topology was chosen for its minimal transistor count, excellent performance, and its ability to pass a full rail-to-rail voltage swing, which is a critical requirement for robust standard cell design.
-* **Schematic:**
+* **Schematic:** **(Update: The Body of NMOS Should Be Connected to GND and the Body of PMOS Should Be Connected To VDD)**
 
   ![MUX4 Schematic](docs/images/MUX4.png)
 
