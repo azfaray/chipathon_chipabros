@@ -147,3 +147,11 @@ This section presents the simulation results for our proposed cell designs. All 
 * **Reference:** Based on 9T OSU standard cell.
 * **Goal:** Balanced LH/HL delay via mobility compensation.
 * **Sizing Strategy:** For designs that implement PUN and PDN, we consider sizing based on the worst-case path delay.
+
+* ### MUX4 Simulation
+
+**Schematic**
+`![MUX4 Simulation Schematic](docs/images/MUX4_sim_schematic.png)`
+
+**Waveform**
+`![MUX4 Waveform](docs/images/MUX4_waveform.png)`
