@@ -206,10 +206,60 @@ This section presents the simulation results for our proposed cell designs. All 
 </table>
 
 
+
+**Results Variation 2**
+* **PMOS = 1.7/0.3**
+* **NMOS = 0.85/0.3**
+<table border="1" cellspacing="0" cellpadding="4">
+  <tr>
+    <th>Input Slew (ps)</th>
+    <th>Input Case</th>
+    <th>t_pLH (ps)</th>
+    <th>t_pHL (ps)</th>
+    <th>t_pd (ps)</th>
+    <th>Leakage Curr (A)</th>
+    <th>Leakage Power (nW)</th>
+  </tr>
+  <tr>
+    <td rowspan="4">100</td>
+    <td>x0</td>
+    <td>144.998</td>
+    <td>145.479</td>
+    <td>145.239</td>
+    <td>-2.80E-11</td>
+    <td>0.09237954</td>
+  </tr>
+  <tr>
+    <td>x1</td>
+    <td>146.668</td>
+    <td>145.884</td>
+    <td>146.276</td>
+    <td>-2.75E-11</td>
+    <td>0.09088344</td>
+  </tr>
+  <tr>
+    <td>x2</td>
+    <td>146.279</td>
+    <td>145.6795</td>
+    <td>145.979</td>
+    <td>-2.80E-11</td>
+    <td>0.09084306</td>
+  </tr>
+  <tr>
+    <td>x3</td>
+    <td>145.126</td>
+    <td>145.08</td>
+    <td>145.103</td>
+    <td>-2.71E-11</td>
+    <td>0.08930493</td>
+  </tr>
+</table>
+
+
+
 **Results Variation 3**
 * **PMOS = 1.7/0.3**
 * **NMOS = 1.7/0.3**
-
 <table>
   <tr>
     <th>Input Slew (ps)</th>
