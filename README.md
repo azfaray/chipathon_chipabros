@@ -1,7 +1,7 @@
 > [!IMPORTANT]
 > > **Last Updated: 9 August 2025**
 > >
-> > The MUX4 schematic description was updated to clarify the correct body connections for the NMOS (to GND) and PMOS (to VDD) transistors.
+> > Update notes: We have added section 8, which contains the results of our schematic simulations.
 
 ---
 
