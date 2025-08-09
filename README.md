@@ -142,4 +142,8 @@ Our final validation will involve a side-by-side comparison of a benchmark circu
 
 ## 8. Schematic Simulations
 
-Our workflow utilizes a combination of open-source and industry-standard EDA tools.
+This section presents the simulation results for our proposed cell designs. All schematics were designed and simulated in **Xschem** using the GF180MCU PDK.
+
+* **Reference:** Based on 9T OSU standard cell.
+* **Goal:** Balanced LH/HL delay via mobility compensation.
+* **Sizing Strategy:** For designs that implement PUN and PDN, we consider sizing based on the worst-case path delay.
