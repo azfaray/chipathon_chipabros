@@ -151,7 +151,7 @@ This section presents the simulation results for our proposed cell designs. All 
 * ### MUX4 Simulation
 
 **Schematic**
-`![MUX4 Simulation Schematic](docs/images/MUX4_sim_schematic.png)`
+![MUX4 Simulation Schematic](docs/images/MUX4_sim_schematic.png)`
 
 **Waveform**
 `![MUX4 Waveform](docs/images/MUX4_waveform.png)`
