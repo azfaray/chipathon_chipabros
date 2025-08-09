@@ -148,7 +148,7 @@ This section presents the simulation results for our proposed cell designs. All 
 * **Goal:** Balanced LH/HL delay via mobility compensation.
 * **Sizing Strategy:** For designs that implement PUN and PDN, we consider sizing based on the worst-case path delay.
 
-* ### MUX4 Simulation
+### MUX4 Simulation
 
 **Schematic**
 
