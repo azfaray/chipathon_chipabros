@@ -1,3 +1,10 @@
+> [!IMPORTANT]
+> > **Last Updated: 9 August 2025**
+> >
+> > The MUX4 schematic description was updated to clarify the correct body connections for the NMOS (to GND) and PMOS (to VDD) transistors.
+
+---
+
 # SSCS Chipathon 2025 - Digital Building Blocks: OSU Library Extension
 
 **Track:** Digital Building Blocks  
