@@ -156,3 +156,12 @@ This section presents the simulation results for our proposed cell designs. All 
 
 **Waveform**
 `![MUX4 Waveform](docs/images/MUX4_waveform.png)`
+
+**Results**
+| Input Case | Input Slew (ps) | t_pLH (ps) | t_pHL (ps) | t_pd (ps) |
+|---|---|---|---|---|
+| `x0` -> `Y` (sel `00`) | 100 | 150.2 | 145.8 | 148.0 |
+| `x1` -> `Y` (sel `01`) | 100 | 151.5 | 146.1 | 148.8 |
+| `x2` -> `Y` (sel `10`) | 100 | 149.8 | 147.2 | 148.5 |
+| `x3` -> `Y` (sel `11`) | 100 | 152.1 | 145.5 | 148.8 |
+
