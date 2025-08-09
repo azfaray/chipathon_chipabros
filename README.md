@@ -158,6 +158,8 @@ This section presents the simulation results for our proposed cell designs. All 
 `![MUX4 Waveform](docs/images/MUX4_waveform.png)`
 
 **Results**
+* **Input Slew Rate: 10 ps**
+
 | Input Case | Input Slew (ps) | t_pLH (ps) | t_pHL (ps) | t_pd (ps) |
 |---|---|---|---|---|
 | `x0` -> `Y` (sel `00`) | 100 | 150.2 | 145.8 | 148.0 |
