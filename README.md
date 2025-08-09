@@ -156,6 +156,7 @@ This section presents the simulation results for our proposed cell designs. All 
 
 **Waveform**
 `![MUX4 Waveform](docs/images/MUX4_waveform.png)`
+*
 
 **Results Variation 1**
 * **PMOS = 0.75/0.3**
@@ -204,7 +205,7 @@ This section presents the simulation results for our proposed cell designs. All 
     <td>0.08859246</td>
   </tr>
 </table>
-
+*
 
 
 **Results Variation 2**
@@ -254,7 +255,7 @@ This section presents the simulation results for our proposed cell designs. All 
     <td>0.08930493</td>
   </tr>
 </table>
-
+*
 
 
 **Results Variation 3**
