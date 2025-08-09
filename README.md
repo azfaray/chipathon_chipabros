@@ -183,3 +183,70 @@ This section presents the simulation results for our proposed cell designs. All 
 | 10  | x1 -> Y | 114.155 | 94.94  | 104.5475 | -2.76E-11 | 0.09095757 |
 | 10  | x2 -> Y | 113.966 | 98.01  | 105.988  | -2.75E-11 | 0.09084207 |
 | 10  | x3 -> Y | 118.928 | 91.91  | 105.419  | -2.71E-11 | 0.08930394 |
+
+<table>
+  <tr>
+    <th>Input Slew (ps)</th>
+    <th>Input Case</th>
+    <th>t_pLH (ps)</th>
+    <th>t_pHL (ps)</th>
+    <th>t_pd (ps)</th>
+    <th>Leakage Curr (A)</th>
+    <th>Leakage Power (nW)</th>
+  </tr>
+  <tr>
+    <td rowspan="4">200</td>
+    <td>x0 -> Y</td><td>107.569</td><td>117.2</td><td>112.3845</td><td>-2.80E-11</td><td>0.0923802</td>
+  </tr>
+  <tr>
+    <td>x1 -> Y</td><td>112.012</td><td>114.72</td><td>113.366</td><td>-2.76E-11</td><td>0.09095757</td>
+  </tr>
+  <tr>
+    <td>x2 -> Y</td><td>109.915</td><td>113.65</td><td>111.7825</td><td>-2.75E-11</td><td>0.09084207</td>
+  </tr>
+  <tr>
+    <td>x3 -> Y</td><td>114.252</td><td>112.23</td><td>113.241</td><td>-2.71E-11</td><td>0.08930394</td>
+  </tr>
+
+  <tr>
+    <td rowspan="4">100</td>
+    <td>x0 -> Y</td><td>104.884</td><td>108.13</td><td>106.507</td><td>-2.80E-11</td><td>0.0923802</td>
+  </tr>
+  <tr>
+    <td>x1 -> Y</td><td>109.632</td><td>103.84</td><td>106.736</td><td>-2.76E-11</td><td>0.09095757</td>
+  </tr>
+  <tr>
+    <td>x2 -> Y</td><td>107.748</td><td>105.3</td><td>106.524</td><td>-2.75E-11</td><td>0.09084207</td>
+  </tr>
+  <tr>
+    <td>x3 -> Y</td><td>113.831</td><td>100.06</td><td>106.9455</td><td>-2.71E-11</td><td>0.08930394</td>
+  </tr>
+
+  <tr>
+    <td rowspan="4">50</td>
+    <td>x0 -> Y</td><td>105.316</td><td>103.3</td><td>104.308</td><td>-2.80E-11</td><td>0.0923802</td>
+  </tr>
+  <tr>
+    <td>x1 -> Y</td><td>111.502</td><td>98.27</td><td>104.886</td><td>-2.76E-11</td><td>0.09095757</td>
+  </tr>
+  <tr>
+    <td>x2 -> Y</td><td>109.892</td><td>100.74</td><td>105.316</td><td>-2.75E-11</td><td>0.09084207</td>
+  </tr>
+  <tr>
+    <td>x3 -> Y</td><td>115.859</td><td>95.39</td><td>105.6245</td><td>-2.71E-11</td><td>0.08930394</td>
+  </tr>
+
+  <tr>
+    <td rowspan="4">10</td>
+    <td>x0 -> Y</td><td>109.102</td><td>100.77</td><td>104.936</td><td>-2.80E-11</td><td>0.0923802</td>
+  </tr>
+  <tr>
+    <td>x1 -> Y</td><td>114.155</td><td>94.94</td><td>104.5475</td><td>-2.76E-11</td><td>0.09095757</td>
+  </tr>
+  <tr>
+    <td>x2 -> Y</td><td>113.966</td><td>98.01</td><td>105.988</td><td>-2.75E-11</td><td>0.09084207</td>
+  </tr>
+  <tr>
+    <td>x3 -> Y</td><td>118.928</td><td>91.91</td><td>105.419</td><td>-2.71E-11</td><td>0.08930394</td>
+  </tr>
+</table>
