@@ -139,3 +139,7 @@ Our final validation will involve a side-by-side comparison of a benchmark circu
 | **M. Azfar A. Yusup** | MUX4 design schematic and layout |
 
 ---
+
+## 8. Schematic Simulations
+
+Our workflow utilizes a combination of open-source and industry-standard EDA tools.
