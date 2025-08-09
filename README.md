@@ -158,8 +158,9 @@ This section presents the simulation results for our proposed cell designs. All 
 `![MUX4 Waveform](docs/images/MUX4_waveform.png)`
 
 **Results**
-* **Input Slew Rate: 10 ps**
 
+* **PMOS = 1.7/0.3**
+* **NMOS = 1.7/0.3**
 | Input Slew (ps) | Input Case | t_pLH (ps) | t_pHL (ps) | t_pd (ps) |
 |---:|---|---:|---:|---:|
 | 200 | x0 -> Y | 107.569 | 117.2  | 112.3845 |
