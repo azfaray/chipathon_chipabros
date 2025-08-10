@@ -148,6 +148,18 @@ This section presents the simulation results for our proposed cell designs. All 
 * **Goal:** Balanced LH/HL delay via mobility compensation.
 * **Sizing Strategy:** For designs that implement PUN and PDN, we consider sizing based on the worst-case path delay.
 
+### AOI33 Simulation
+
+**Schematic**
+
+![AOI33 Simulation Schematic](docs/images/AOI33_sim_schematic.png)`
+
+**Waveform**
+`![AOI33 Waveform](docs/images/AOI33_waveform.png)`
+
+**Results**
+
+
 ### MUX4 Simulation
 
 **Schematic**
@@ -157,6 +169,7 @@ This section presents the simulation results for our proposed cell designs. All 
 **Waveform**
 `![MUX4 Waveform](docs/images/MUX4_waveform.png)`
 
+**Results**
 
 * **Results Sizing Variation 1**
 
