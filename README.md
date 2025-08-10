@@ -217,6 +217,80 @@ This section presents the simulation results for our proposed cell designs. All 
 The simulation results show that ...
 
 
+### OAI33 Simulation
+
+**Schematic**
+
+![OAI33 Simulation Schematic](docs/images/OAI33_sim_schematic.png)`
+
+**Waveform**
+`![OAI33 Waveform](docs/images/OAI33_waveform.png)`
+
+**Results**
+
+* **Results Critical Path Considered**
+
+  * **PMOS = 5.1/0.3**
+  * **NMOS = 1.7/0.3**
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Input Configuration</th>
+<th>Input Slew (ps)</th>
+<th>t_plh (ps)</th>
+<th>t_phl (ps)</th>
+<th>t_pd (ps)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Worst-Case t_plh (A → OUT)</td>
+<td>A: 1→0, B=0, C=0, D=1, E=0, F=0</td>
+<td>20</td><td>210.92</td><td>315.68</td><td>263.300</td>
+</tr>
+<tr>
+<td></td><td></td>
+<td>50</td><td>215.81</td><td>317.04</td><td>266.425</td>
+</tr>
+<tr>
+<td></td><td></td>
+<td>100</td><td>221.98</td><td>320.47</td><td>271.225</td>
+</tr>
+<tr>
+<td></td><td></td>
+<td>200</td><td>229.91</td><td>325.56</td><td>277.735</td>
+</tr>
+<tr>
+<td></td><td></td>
+<td>400</td><td>241.14</td><td>335.63</td><td>288.385</td>
+</tr>
+
+<tr>
+<td>Worst-Case t_phl (D → OUT)</td>
+<td>D: 0→1, A=1, B=0, C=0, E=0, F=0</td>
+<td>20</td><td>210.92</td><td>315.68</td><td>263.300</td>
+</tr>
+<tr>
+<td></td><td></td>
+<td>50</td><td>215.81</td><td>317.04</td><td>266.425</td>
+</tr>
+<tr>
+<td></td><td></td>
+<td>100</td><td>221.98</td><td>320.47</td><td>271.225</td>
+</tr>
+<tr>
+<td></td><td></td>
+<td>200</td><td>229.91</td><td>325.56</td><td>277.735</td>
+</tr>
+<tr>
+<td></td><td></td>
+<td>400</td><td>241.14</td><td>335.63</td><td>288.385</td>
+</tr>
+</tbody>
+</table>
+
+
 ### MUX4 Simulation
 
 **Schematic**
