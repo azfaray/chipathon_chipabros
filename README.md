@@ -212,8 +212,9 @@ This section presents the simulation results for our proposed cell designs. All 
 </tbody>
 </table>
 
+**Conclusion**
 
-
+The simulation results show that ...
 
 
 ### MUX4 Simulation
