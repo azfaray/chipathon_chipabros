@@ -158,9 +158,10 @@ This section presents the simulation results for our proposed cell designs. All 
 `![MUX4 Waveform](docs/images/MUX4_waveform.png)`
 
 
-**Results Variation 1**
-* **PMOS = 0.85/0.3**
-* **NMOS = 0.85/0.3**
+* **Results Sizing Variation 1**
+
+  * **PMOS = 0.85/0.3**
+  * **NMOS = 0.85/0.3**
 <table border="1" cellspacing="0" cellpadding="4">
   <tr>
     <th>Input Slew (ps)</th>
@@ -208,7 +209,7 @@ This section presents the simulation results for our proposed cell designs. All 
 
 
 
-* **Results Variation 2**
+* **Results Sizing Variation 2**
 
   * **PMOS = 1.7/0.3**
   * **NMOS = 0.85/0.3**
@@ -259,9 +260,10 @@ This section presents the simulation results for our proposed cell designs. All 
 
 
 
-**Results Variation 3**
-* **PMOS = 1.7/0.3**
-* **NMOS = 1.7/0.3**
+* **Results Sizing Variation 3**
+
+  * **PMOS = 1.7/0.3**
+  * **NMOS = 1.7/0.3**
 <table>
   <tr>
     <th>Input Slew (ps)</th>
