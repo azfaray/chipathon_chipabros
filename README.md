@@ -173,7 +173,7 @@ This section presents the simulation results for our proposed cell designs. All 
   </tr>
   <tr>
     <td rowspan="4">100</td>
-    <td>x0</td>
+    <td>x0 -> Y</td>
     <td>171.1</td>
     <td>149.16</td>
     <td>160.13</td>
@@ -181,7 +181,7 @@ This section presents the simulation results for our proposed cell designs. All 
     <td>0.0916575</td>
   </tr>
   <tr>
-    <td>x1</td>
+    <td>x1 -> Y</td>
     <td>173.67</td>
     <td>146.59</td>
     <td>160.13</td>
@@ -189,7 +189,7 @@ This section presents the simulation results for our proposed cell designs. All 
     <td>0.0912762</td>
   </tr>
   <tr>
-    <td>x2</td>
+    <td>x2 -> Y</td>
     <td>173.17</td>
     <td>147.8</td>
     <td>160.485</td>
@@ -197,7 +197,7 @@ This section presents the simulation results for our proposed cell designs. All 
     <td>0.07824564</td>
   </tr>
   <tr>
-    <td>x3</td>
+    <td>x3 -> Y</td>
     <td>173.0</td>
     <td>145.19</td>
     <td>160.445</td>
@@ -223,7 +223,7 @@ This section presents the simulation results for our proposed cell designs. All 
   </tr>
   <tr>
     <td rowspan="4">100</td>
-    <td>x0</td>
+    <td>x0 -> Y</td>
     <td>144.998</td>
     <td>145.479</td>
     <td>145.239</td>
@@ -231,7 +231,7 @@ This section presents the simulation results for our proposed cell designs. All 
     <td>0.09237954</td>
   </tr>
   <tr>
-    <td>x1</td>
+    <td>x1 -> Y</td>
     <td>146.668</td>
     <td>145.884</td>
     <td>146.276</td>
@@ -239,7 +239,7 @@ This section presents the simulation results for our proposed cell designs. All 
     <td>0.09088344</td>
   </tr>
   <tr>
-    <td>x2</td>
+    <td>x2 -> Y</td>
     <td>146.279</td>
     <td>145.6795</td>
     <td>145.979</td>
@@ -247,7 +247,7 @@ This section presents the simulation results for our proposed cell designs. All 
     <td>0.09084306</td>
   </tr>
   <tr>
-    <td>x3</td>
+    <td>x3 -> Y</td>
     <td>145.126</td>
     <td>145.08</td>
     <td>145.103</td>
