@@ -1,0 +1,31 @@
+* mux4.spice
+* Subcircuit MUX4 untuk GF180MCU PDK
+* Menggunakan path absolut model dari /foss/pdks/gf180mcuD/libs.tech/ngspice/
+
+.include "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice"
+
+.subckt mux4 VDD C1 C0 GND x0 x1 OUT x2 x3
+.param fnoicor=0
+
+* Transmission Gate Logic and Inverters
+M1 x0 net3 net1 GND nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M2 x0 C0 net1 VDD pfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M3 x1 C0 net1 GND nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M4 x1 net3 net1 VDD pfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M5 x2 net3 net2 GND nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M6 x2 C0 net2 VDD pfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M7 x3 C0 net2 GND nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M8 x3 net3 net2 VDD pfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M9 net2 C1 OUT GND nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M10 net2 net4 OUT VDD pfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M11 net1 net4 OUT GND nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M12 net1 C1 OUT VDD pfet_03v3 L=0.3u W=0.85u nf=1 m=1
+
+* Inverter untuk kontrol C0 dan C1
+M13 net3 C0 GND GND nfet_03v3 L=0.28u W=0.85u nf=1 m=1
+M14 net3 C0 VDD VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+M15 net4 C1 GND GND nfet_03v3 L=0.28u W=0.85u nf=1 m=1
+M16 net4 C1 VDD VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+
+.ends mux4
+
