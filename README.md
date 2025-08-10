@@ -232,7 +232,7 @@ The simulation results show that ...
 
   * **PMOS = 5.1/0.3**
   * **NMOS = 1.7/0.3**
-<table>
+<table border="1">
 <thead>
 <tr>
 <th>Input Slew (ps)</th>
@@ -248,48 +248,41 @@ The simulation results show that ...
 <tbody>
 <tr>
 <td>20</td>
-<td>Worst-Case t_plh (A → OUT)</td>
-<td>A: 1→0, B=0, C=0, D=1, E=0, F=0</td>
+<td rowspan="5">Worst-Case t_plh (A → OUT)</td>
+<td rowspan="5">A: 1→0, B=0, C=0, D=1, E=0, F=0</td>
 <td>210.92</td>
-<td>Worst-Case t_phl (D → OUT)</td>
-<td>D: 0→1, A=1, B=0, C=0, E=0, F=0</td>
+<td rowspan="5">Worst-Case t_phl (D → OUT)</td>
+<td rowspan="5">D: 0→1, A=1, B=0, C=0, E=0, F=0</td>
 <td>315.68</td>
 <td>263.300</td>
 </tr>
 <tr>
 <td>50</td>
-<td></td><td></td>
 <td>215.81</td>
-<td></td><td></td>
 <td>317.04</td>
 <td>266.425</td>
 </tr>
 <tr>
 <td>100</td>
-<td></td><td></td>
 <td>221.98</td>
-<td></td><td></td>
 <td>320.47</td>
 <td>271.225</td>
 </tr>
 <tr>
 <td>200</td>
-<td></td><td></td>
 <td>229.91</td>
-<td></td><td></td>
 <td>325.56</td>
 <td>277.735</td>
 </tr>
 <tr>
 <td>400</td>
-<td></td><td></td>
 <td>241.14</td>
-<td></td><td></td>
 <td>335.63</td>
 <td>288.385</td>
 </tr>
 </tbody>
 </table>
+
 
 
 
