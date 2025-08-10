@@ -163,55 +163,48 @@ This section presents the simulation results for our proposed cell designs. All 
 * **NMOS = xxx/0.3**
 
 <table>
-  <tr>
-    <th>Input Slew (ps)</th>
-    <th>Input Case</th>
-    <th>t_pLH (ps)</th>
-    <th>t_pHL (ps)</th>
-    <th>t_pd (ps)</th>
-    <th>avg t_pd (ps)</th>
-  </tr>
-  
-  <tr>
-    <td rowspan="6">200</td>
-    <td>A -> Y</td><td>198.8356</td><td>206.0740</td><td>202.4548</td><td rowspan="6">211.16</td>
-  </tr>
-  <tr><td>B -> Y</td><td>212.2703</td><td>233.7820</td><td>223.0262</td></tr>
-  <tr><td>C -> Y</td><td>217.8432</td><td>256.0850</td><td>236.9641</td></tr>
-  <tr><td>D -> Y</td><td>133.1342</td><td>234.3580</td><td>183.7461</td></tr>
-  <tr><td>E -> Y</td><td>143.9440</td><td>263.2240</td><td>203.5840</td></tr>
-  <tr><td>F -> Y</td><td>147.8084</td><td>292.7230</td><td>220.2657</td></tr>
-  
-  <tr>
-    <td rowspan="6">100</td>
-    <td>A -> Y</td><td>187.4834</td><td>196.6160</td><td>192.0497</td><td rowspan="6">191.52</td>
-  </tr>
-  <tr><td>B -> Y</td><td>207.8959</td><td>221.7290</td><td>214.8125</td></tr>
-  <tr><td>C -> Y</td><td>217.9455</td><td>241.6090</td><td>229.7773</td></tr>
-  <tr><td>D -> Y</td><td>118.9840</td><td>218.1110</td><td>168.5475</td></tr>
-  <tr><td>E -> Y</td><td>141.2204</td><td>248.6760</td><td>194.9482</td></tr>
-  <tr><td>F -> Y</td><td>150.0461</td><td>276.0370</td><td>213.0416</td></tr>
-  
-  <tr>
-    <td rowspan="6">50</td>
-    <td>A -> Y</td><td>183.7745</td><td>189.9340</td><td>186.8543</td><td rowspan="6">186.90</td>
-  </tr>
-  <tr><td>B -> Y</td><td>203.8117</td><td>221.2320</td><td>212.5219</td></tr>
-  <tr><td>C -> Y</td><td>215.4602</td><td>232.4440</td><td>223.9521</td></tr>
-  <tr><td>D -> Y</td><td>115.6700</td><td>210.3530</td><td>163.0115</td></tr>
-  <tr><td>E -> Y</td><td>133.1882</td><td>241.0460</td><td>187.1171</td></tr>
-  <tr><td>F -> Y</td><td>145.4480</td><td>268.6370</td><td>207.0425</td></tr>
-  
-  <tr>
-    <td rowspan="6">20</td>
-    <td>A -> Y</td><td>180.5014</td><td>185.8490</td><td>183.1752</td><td rowspan="6">189.11</td>
-  </tr>
-  <tr><td>B -> Y</td><td>201.7703</td><td>208.2410</td><td>205.0057</td></tr>
-  <tr><td>C -> Y</td><td>212.3611</td><td>227.3030</td><td>219.8321</td></tr>
-  <tr><td>D -> Y</td><td>110.2725</td><td>205.1380</td><td>157.7053</td></tr>
-  <tr><td>E -> Y</td><td>130.4006</td><td>239.0010</td><td>184.7008</td></tr>
-  <tr><td>F -> Y</td><td>144.5740</td><td>267.4300</td><td>206.0020</td></tr>
+  <thead>
+    <tr>
+      <th>t_plh (ps)</th>
+      <th>t_tlh (ps)</th>
+      <th>t_pd (ps)</th>
+      <th>avg t_pd (ps)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>180.5014</td><td>185.8490</td><td>183.1752</td><td>198.7832</td></tr>
+    <tr><td>183.7745</td><td>189.9340</td><td>186.8543</td><td></td></tr>
+    <tr><td>187.4834</td><td>196.6160</td><td>192.0497</td><td></td></tr>
+    <tr><td>198.8356</td><td>206.0740</td><td>202.4548</td><td></td></tr>
+    <tr><td>224.0370</td><td>234.7270</td><td>229.3820</td><td></td></tr>
+    <tr><td>201.7703</td><td>208.2410</td><td>205.0057</td><td>219.3867</td></tr>
+    <tr><td>203.8117</td><td>221.2320</td><td>212.5219</td><td></td></tr>
+    <tr><td>207.8959</td><td>221.7290</td><td>214.8125</td><td></td></tr>
+    <tr><td>212.2703</td><td>233.7820</td><td>223.0262</td><td></td></tr>
+    <tr><td>223.7021</td><td>259.4330</td><td>241.5676</td><td></td></tr>
+    <tr><td>212.3611</td><td>227.3030</td><td>219.8321</td><td>232.1439</td></tr>
+    <tr><td>215.4602</td><td>232.4440</td><td>223.9521</td><td></td></tr>
+    <tr><td>217.9455</td><td>241.6090</td><td>229.7773</td><td></td></tr>
+    <tr><td>217.8432</td><td>256.0850</td><td>236.9641</td><td></td></tr>
+    <tr><td>219.2338</td><td>281.1540</td><td>250.1939</td><td></td></tr>
+    <tr><td>110.2725</td><td>205.1380</td><td>157.7053</td><td>177.7168</td></tr>
+    <tr><td>115.6700</td><td>210.3530</td><td>163.0115</td><td></td></tr>
+    <tr><td>118.9840</td><td>218.1110</td><td>168.5475</td><td></td></tr>
+    <tr><td>133.1342</td><td>234.3580</td><td>183.7461</td><td></td></tr>
+    <tr><td>162.4970</td><td>268.6500</td><td>215.5735</td><td></td></tr>
+    <tr><td>130.4006</td><td>239.0010</td><td>184.7008</td><td>200.3281</td></tr>
+    <tr><td>133.1882</td><td>241.0460</td><td>187.1171</td><td></td></tr>
+    <tr><td>141.2204</td><td>248.6760</td><td>194.9482</td><td></td></tr>
+    <tr><td>143.9440</td><td>263.2240</td><td>203.5840</td><td></td></tr>
+    <tr><td>161.0785</td><td>301.5020</td><td>231.2903</td><td></td></tr>
+    <tr><td>144.5740</td><td>267.4300</td><td>206.0020</td><td>217.9606</td></tr>
+    <tr><td>145.4480</td><td>268.6370</td><td>207.0425</td><td></td></tr>
+    <tr><td>150.0461</td><td>276.0370</td><td>213.0416</td><td></td></tr>
+    <tr><td>147.8084</td><td>292.7230</td><td>220.2657</td><td></td></tr>
+    <tr><td>157.6443</td><td>329.2580</td><td>243.4512</td><td></td></tr>
+  </tbody>
 </table>
+
 
 
 
