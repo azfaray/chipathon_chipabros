@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> > **Last Updated: 9 August 2025**
+> > **Last Updated: 10 August 2025**
 > >
 > > Update notes: We have added section 8 (after work distribution in README.md), which contains the results of our schematic simulations.
 
@@ -349,7 +349,8 @@ The simulation results show that
 ![MUX4 Simulation Schematic](docs/images/MUX4_sim_schematic.png)`
 
 **Waveform**
-`![MUX4 Waveform](docs/images/MUX4_waveform.png)`
+
+![MUX4 Waveform](docs/images/MUX4_waveform.png)`
 
 **Results**
 
