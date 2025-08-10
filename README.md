@@ -208,9 +208,9 @@ This section presents the simulation results for our proposed cell designs. All 
 
 
 
-**Results Variation 2**
-* **PMOS = 1.7/0.3**
-* **NMOS = 0.85/0.3**
+* **Results Variation 2**
+** **PMOS = 1.7/0.3**
+** **NMOS = 0.85/0.3**
 <table border="1" cellspacing="0" cellpadding="4">
   <tr>
     <th>Input Slew (ps)</th>
