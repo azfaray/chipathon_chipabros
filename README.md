@@ -358,64 +358,6 @@ The simulation results show that
 
   * **PMOS = 0.85/0.3**
   * **NMOS = 0.85/0.3**
-
-<table border="1" cellspacing="0" cellpadding="4" style="background-color:#fff2cc; border-collapse:collapse; text-align:center;">
-  <tr>
-    <th>Param 1</th>
-    <th>Param 2</th>
-    <th>Param 3</th>
-    <th>Param 4</th>
-    <th>Output Load</th>
-    <th colspan="2">Case 1</th>
-    <th colspan="2">Case 2</th>
-    <th>Avg t_pd</th>
-    <th>Blank 1</th>
-    <th>Val A</th>
-    <th colspan="2">Case 3</th>
-  </tr>
-  <tr>
-    <td rowspan="4">0.85/0.3</td>
-    <td rowspan="4">0.85/0.3</td>
-    <td rowspan="4">0.1n</td>
-    <td rowspan="4">0.1n</td>
-    <td rowspan="4">16.16f</td>
-    <td>x0</td>
-    <td>171.099</td>
-    <td>x0</td>
-    <td>149.16</td>
-    <td rowspan="4">160.29275</td>
-    <td rowspan="4">-</td>
-    <td rowspan="4">6.238585338</td>
-    <td>-2.78E-11</td>
-    <td>0.0916575</td>
-  </tr>
-  <tr>
-    <td>x1</td>
-    <td>173.659</td>
-    <td>x1</td>
-    <td>146.57</td>
-    <td>-2.73E-11</td>
-    <td>0.09012762</td>
-  </tr>
-  <tr>
-    <td>x2</td>
-    <td>173.184</td>
-    <td>x2</td>
-    <td>147.78</td>
-    <td>-2.37E-11</td>
-    <td>0.07824564</td>
-  </tr>
-  <tr>
-    <td>x3</td>
-    <td>175.74</td>
-    <td>x3</td>
-    <td>145.15</td>
-    <td>-2.68E-11</td>
-    <td>0.08859246</td>
-  </tr>
-</table>
-
-
 <table border="1" cellspacing="0" cellpadding="4">
   <tr>
     <th>Input Slew (ps)</th>
@@ -429,32 +371,32 @@ The simulation results show that
   <tr>
     <td rowspan="4">100</td>
     <td>x0 -> Y</td>
-    <td>171.1</td>
+    <td>171.099</td>
     <td>149.16</td>
-    <td>160.13</td>
+    <td>160.1295</td>
     <td>-2.78E-11</td>
     <td>0.0916575</td>
   </tr>
   <tr>
     <td>x1 -> Y</td>
-    <td>173.67</td>
-    <td>146.59</td>
-    <td>160.13</td>
+    <td>173.659</td>
+    <td>146.57</td>
+    <td>160.1145</td>
     <td>-2.73E-11</td>
-    <td>0.0912762</td>
+    <td>0.09012762</td>
   </tr>
   <tr>
     <td>x2 -> Y</td>
-    <td>173.17</td>
-    <td>147.8</td>
-    <td>160.485</td>
+    <td>173.184</td>
+    <td>147.78</td>
+    <td>160.482</td>
     <td>-2.37E-11</td>
     <td>0.07824564</td>
   </tr>
   <tr>
     <td>x3 -> Y</td>
-    <td>173.0</td>
-    <td>145.19</td>
+    <td>175.74</td>
+    <td>145.15</td>
     <td>160.445</td>
     <td>-2.68E-11</td>
     <td>0.08859246</td>
