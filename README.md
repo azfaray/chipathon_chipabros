@@ -152,10 +152,10 @@ This section presents the simulation results for our proposed cell designs. All 
 
 **Schematic**
 
-![AOI33 Simulation Schematic](docs/images/AOI33_sim_schematic.png)`
+![AOI33 Simulation Schematic](docs/images/AOI33_sim_schematic.png)
 
 **Waveform**
-`![AOI33 Waveform](docs/images/AOI33_waveform.png)`
+`![AOI33 Waveform](docs/images/AOI33_waveform.png)
 
 **Results**
 
@@ -221,10 +221,10 @@ The simulation results show that ...
 
 **Schematic**
 
-![OAI33 Simulation Schematic](docs/images/OAI33_sim_schematic.png)`
+![OAI33 Simulation Schematic](docs/images/OAI33_sim_schematic.png)
 
 **Waveform**
-`![OAI33 Waveform](docs/images/OAI33_waveform.png)`
+`![OAI33 Waveform](docs/images/OAI33_waveform.png)
 
 **Results**
 
@@ -346,11 +346,11 @@ The simulation results show that
 
 **Schematic**
 
-![MUX4 Simulation Schematic](docs/images/MUX4_sim_schematic.png)`
+![MUX4 Simulation Schematic](docs/images/MUX4_sim_schematic.png)
 
 **Waveform**
 
-![MUX4 Waveform](docs/images/MUX4_waveform.png)`
+![MUX4 Waveform](docs/images/MUX4_waveform.png)
 
 **Results**
 
