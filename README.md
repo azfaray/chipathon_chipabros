@@ -155,7 +155,7 @@ This section presents the simulation results for our proposed cell designs. All 
 ![AOI33 Simulation Schematic](docs/images/AOI33_sim_schematic.png)
 
 **Waveform**
-`![AOI33 Waveform](docs/images/AOI33_waveform.png)
+![AOI33 Waveform](docs/images/AOI33_waveform.png)
 
 **Results**
 
@@ -340,7 +340,7 @@ The simulation results show that ...
 
 **Conclusion**
 
-The simulation results show that
+The simulation results indicate that the OAI33 gate, when sized with consideration for the critical path (PMOS = 5.1/0.3, NMOS = 1.7/0.3), successfully meets the target delay specification (≤ 0.3 ns) set in the proposal. Compared to the default OSU standard sizing (PMOS = 1.7/0.3, NMOS = 0.85/0.3), the critical-path-based sizing delivers a significantly lower propagation delay across all tested input slews. This improvement demonstrates that tailoring the transistor dimensions to the worst-case conduction path yields better timing performance than the fixed OSU sizing rule, while still adhering to the functional and electrical constraints defined in the design targets.
 
 ### MUX4 Simulation
 
