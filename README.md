@@ -530,3 +530,61 @@ The simulation results indicate that the OAI33 gate, when sized with considerati
 **Conclusion**
 
 The simulation results show that all three sizing variations meet the target delay (≤ 0.3 ns) and leakage (≤ 0.5 nW) specifications. Variation 3 delivers the fastest delay (~104–113 ps), although this variation is still questionable regarding the 1× drive, input capacitance (≤ 0.01 pF), and area (≤ 60 µm²) constraints due to full upsizing. Variation 2 achieves a balanced delay (~145 ps) while reducing the risk of violating capacitance and area limits, making it the preferred choice for meeting all target specifications. Variation 1 meets all limits but has the slowest delay (~160 ps).
+
+## 9. Charlib Characterization
+
+Cell characterization is performed using **Charlib** to extract timing, power, and functional parameters for each standard cell.  
+The process generates delay plots (rise/fall vs. input slew and output load) and Liberty (`.lib`) files for use in synthesis, place-and-route, and static timing analysis flows.
+
+---
+
+### AOI33 Timing Characterization
+
+**Delay Plot**  
+![AOI33 Delay Plot](images/charlib/aoi33_delay.png)  
+*Delay plot for AOI33 cell showing rising and falling delays across various input slews and output loads.*
+
+**Liberty File**  
+[📄AOI33.lib](output/aoi33/aoi33.lib)  
+Contains cell definition, pin capacitance, function, and detailed timing/power tables.
+
+**Key Observations**
+- Balanced rise/fall delays across the characterized range.
+- Suitable for complex logic minimization with low delay penalty.
+- Slightly faster fall delay due to pull-down network strength.
+
+---
+
+### OAI33 Timing Characterization
+
+**Delay Plot**  
+![OAI33 Delay Plot](images/charlib/oai33_delay.png)  
+*Delay plot for OAI33 cell showing rising and falling delays across various input slews and output loads.*
+
+**Liberty File**  
+[📄OAI33.lib](output/oai33/oai33.lib)  
+Includes pin functions, timing arcs, and power tables for integration into digital design flows.
+
+**Key Observations**
+- Well-balanced delay characteristics, making it ideal for performance-critical logic paths.
+- Maintains stable delay trend under higher output loads.
+- Energy-efficient due to reduced internal switching in certain logic conditions.
+
+---
+
+### MUX4 Timing Characterization
+
+**Delay Plot**  
+![MUX4 Delay Plot](images/charlib/mux4_delay.png)  
+*Delay plot for MUX4 cell showing propagation delay from data and select inputs to output across varying conditions.*
+
+**Liberty File**  
+[📄MUX4.lib](output/mux4/mux4.lib)  
+Contains complete multiplexer timing and power characterizations for use in synthesis and STA.
+
+**Key Observations**
+- Minimal skew between different input-to-output paths.
+- Delay slightly increases when select inputs switch simultaneously with data inputs.
+- Well-suited for datapath control logic due to predictable performance.
+
+---
