@@ -531,7 +531,7 @@ The simulation results show that all three sizing variations meet the target del
 
 ## 9. Charlib Characterization
 
-Cell characterization is performed using **Charlib** to extract timing, power, and functional parameters for each standard cell.  
+Cell characterization is performed using **Charlib** to extract timing and functional parameters for each standard cell.  
 The process generates delay plots (rise/fall vs. input slew and output load) and Liberty (`.lib`) files for use in synthesis, place-and-route, and static timing analysis flows.
 
 
