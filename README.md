@@ -224,7 +224,7 @@ The simulation results show that ...
 ![OAI33 Simulation Schematic](docs/images/OAI33_sim_schematic.png)
 
 **Waveform**
-`![OAI33 Waveform](docs/images/OAI33_waveform.png)
+![OAI33 Waveform](docs/images/OAI33_waveform.png)
 
 **Results**
 
