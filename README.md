@@ -159,8 +159,8 @@ This section presents the simulation results for our proposed cell designs. All 
 
 **Results**
 
-* **PMOS = xxx/0.3**
-* **NMOS = xxx/0.3**
+* **PMOS = 3.4/0.3**
+* **NMOS = 2.55/0.3**
 
 <table>
 <thead>
@@ -168,7 +168,7 @@ This section presents the simulation results for our proposed cell designs. All 
 <th>Input Case</th>
 <th>input slew (ps)</th>
 <th>t_plh (ps)</th>
-<th>t_tlh (ps)</th>
+<th>t_phl (ps)</th>
 <th>t_pd (ps)</th>
 <th>avg t_pd (ps)</th>
 </tr>
