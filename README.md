@@ -119,13 +119,9 @@ Our final validation will involve a side-by-side comparison of a benchmark circu
 
 ---
 
----
-
 ## 6. Timeline
 
 ![Project Timeline](docs/images/timelinefix.png)
-
----
 
 ---
 
@@ -553,8 +549,6 @@ Contains cell definition, pin capacitance, function, and detailed timing/power t
 - Suitable for complex logic minimization with low delay penalty.
 - Slightly faster fall delay due to pull-down network strength.
 
----
-
 ### OAI33 Timing Characterization
 
 **Delay Plot**  
@@ -569,8 +563,6 @@ Includes pin functions, timing arcs, and power tables for integration into digit
 - Well-balanced delay characteristics, making it ideal for performance-critical logic paths.
 - Maintains stable delay trend under higher output loads.
 - Energy-efficient due to reduced internal switching in certain logic conditions.
-
----
 
 ### MUX4 Timing Characterization
 
@@ -587,4 +579,3 @@ Contains complete multiplexer timing and power characterizations for use in synt
 - Delay slightly increases when select inputs switch simultaneously with data inputs.
 - Well-suited for datapath control logic due to predictable performance.
 
----
