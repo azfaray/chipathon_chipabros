@@ -168,6 +168,7 @@ This section presents the simulation results for our proposed cell designs. All 
 <th>Case (t_phl)</th>
 <th>Input Configuration (t_phl)</th>
 <th>t_phl (ps)</th>
+<th>t_pd (ps)</th>
 </tr>
 </thead>
 <tbody>
@@ -175,30 +176,35 @@ This section presents the simulation results for our proposed cell designs. All 
 <td>20</td>
 <td rowspan="5">Worst-Case t_plh (C → OUT)</td>
 <td rowspan="5">C: 1→0, A=1, B=1, C=1, D=0, E=1</td>
-<td>212.3611</td>
+<td>212.361</td>
 <td rowspan="5">Worst-Case t_phl (F → OUT)</td>
 <td rowspan="5">F: 0→1, A=0, B=0, C=0, D=1, E=1</td>
-<td>267.43</td>
+<td>267.430</td>
+<td>239.896</td>
 </tr>
 <tr>
 <td>50</td>
-<td>215.4602</td>
-<td>268.64</td>
+<td>215.460</td>
+<td>268.640</td>
+<td>242.050</td>
 </tr>
 <tr>
 <td>100</td>
-<td>217.9455</td>
-<td>276.04</td>
+<td>217.946</td>
+<td>276.040</td>
+<td>246.993</td>
 </tr>
 <tr>
 <td>200</td>
-<td>217.8432</td>
-<td>292.72</td>
+<td>217.843</td>
+<td>292.720</td>
+<td>255.282</td>
 </tr>
 <tr>
 <td>400</td>
-<td>219.2338</td>
-<td>329.26</td>
+<td>219.234</td>
+<td>329.260</td>
+<td>274.247</td>
 </tr>
 </tbody>
 </table>
