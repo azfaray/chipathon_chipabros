@@ -547,7 +547,12 @@ Contains pin functions, NLDM timing tables (cell_rise/cell_fall and rise/fall tr
 Contains complete multiplexer timing and power characterizations for use in synthesis and STA.
 
 **Key Observations**
-- Minimal skew between different input-to-output paths.
-- Delay slightly increases when select inputs switch simultaneously with data inputs.
-- Well-suited for datapath control logic due to predictable performance.
+- Input slew values characterized at: **20 ps**, **50 ps**, **100 ps**, **200 ps**, **500 ps**, **1000 ps**.
+- Slew measured from **20% to 80%** transition points.
+- **Cell type:** MUX4 (4-to-1 multiplexer).
+- **Timing measurement points:** Propagation delay from **50% input transition** to **50% output transition**.
+- Output load conditions varied for characterization.
+- Characterization format: **NLDM (Non-Linear Delay Model)** with table lookup.
+- Delay and slew data collected across defined input slew and output load grids.
+- Results indicate performance sensitivity to both input slew and capacitive loading.
 
