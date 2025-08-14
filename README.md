@@ -142,7 +142,7 @@ This section presents the simulation results for our proposed cell designs. All 
 
 * **Reference:** Based on 9T OSU standard cell.
 * **Goal:** Balanced LH/HL delay via mobility compensation.
-* **Sizing Strategy:** For designs that implement PUN and PDN, we consider sizing based on the worst-case path delay.
+* **Sizing Strategy:** Sizing configuration is based on the existing OSU STD Cell where PMOS is twice the size of NMOS's size
 
 ### AOI33 Simulation
 
@@ -153,68 +153,7 @@ This section presents the simulation results for our proposed cell designs. All 
 **Waveform**
 ![AOI33 Waveform](docs/images/AOI33_waveform.png)
 
-**Results**
-
-* **Results Critical Path Considered**
-
-* **PMOS = 3.4/0.3**
-* **NMOS = 2.55/0.3**
-
-<table border="1">
-<thead>
-<tr>
-<th>Capacitif Load (fF)</th>
-<th>Input Slew (ps)</th>
-<th>Case (t_plh)</th>
-<th>Input Configuration (t_plh)</th>
-<th>t_plh (ps)</th>
-<th>Case (t_phl)</th>
-<th>Input Configuration (t_phl)</th>
-<th>t_phl (ps)</th>
-<th>t_pd (ps)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td rowspan="5">16.16</td>
-<td>20</td>
-<td rowspan="5">Worst-Case t_plh (C → OUT)</td>
-<td rowspan="5">C: 1→0, A=1, B=1, C=1, D=0, E=1</td>
-<td>212.361</td>
-<td rowspan="5">Worst-Case t_phl (F → OUT)</td>
-<td rowspan="5">F: 0→1, A=0, B=0, C=0, D=1, E=1</td>
-<td>267.430</td>
-<td>239.896</td>
-</tr>
-<tr>
-<td>50</td>
-<td>215.460</td>
-<td>268.640</td>
-<td>242.050</td>
-</tr>
-<tr>
-<td>100</td>
-<td>217.946</td>
-<td>276.040</td>
-<td>246.993</td>
-</tr>
-<tr>
-<td>200</td>
-<td>217.843</td>
-<td>292.720</td>
-<td>255.282</td>
-</tr>
-<tr>
-<td>400</td>
-<td>219.234</td>
-<td>329.260</td>
-<td>274.247</td>
-</tr>
-</tbody>
-</table>
-
-
-* **Results Critical Path NOT Considered (OSU Standard)**
+**Results Based On Simulation**
 
   * **PMOS = 1.7/0.3**
   * **NMOS = 0.85/0.3**
@@ -272,13 +211,6 @@ This section presents the simulation results for our proposed cell designs. All 
 </tbody>
 </table>
 
-
-
-**Conclusion**
-
-The AOI33 schematic simulation shows that using critical-path-oriented sizing (PMOS = 3.4/0.3, NMOS = 2.55/0.3) achieves the intended delay target of ≤ 0.3 ns at an FO4 capacitive load of 16.16 fF for all evaluated input slews between 20 ps and 400 ps. This sizing strategy consistently produces lower propagation delays compared to the OSU standard configuration (PMOS = 1.7/0.3, NMOS = 0.85/0.3), which exhibits values approaching or surpassing the specification at slower input transitions. The results highlight that optimizing device dimensions based on the worst-case conduction scenario not only enhances timing performance but also preserves compliance with the design constraints, offering a more reliable solution than the uniform sizing approach.
-
-
 ### OAI33 Simulation
 
 **Schematic**
@@ -288,7 +220,7 @@ The AOI33 schematic simulation shows that using critical-path-oriented sizing (P
 **Waveform**
 ![OAI33 Waveform](docs/images/OAI33_waveform.png)
 
-**Results**
+**Results Based on Simulation**
 
   * **PMOS = 1.7/0.3**
   * **NMOS = 0.85/0.3**
@@ -307,7 +239,7 @@ All OAI33 results above are measured at a capacitive load of 16.16 fF, which cor
 
 ![MUX4 Waveform](docs/images/MUX4_waveform.png)
 
-**Results**
+**Results Based On Simulation**
 
 * **Results Sizing Variation 1**
 
