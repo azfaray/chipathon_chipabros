@@ -595,7 +595,7 @@ The simulation results show that all three sizing variations meet the target del
 
 ---
 
-## 9. Charlib Pre-Layout Characterization
+## 9. Charlib Timing Characterization
 
 Cell characterization is performed using **Charlib** to extract timing and functional parameters for each standard cell.  
 The process generates delay plots (rise/fall vs. input slew and output load) and Liberty (`.lib`) files for use in synthesis, place-and-route, and static timing analysis flows.
@@ -620,11 +620,11 @@ Contains cell definition, pin capacitance, function, and detailed timing/power t
 ### OAI33 Timing Characterization
 
 **Delay Plot**  
-![OAI33 Delay Plot](images/charlib/oai33_delay.png)  
+![OAI33 Delay Plot](designs/OAI33/charlib/OAI33_PlotDelay_CharLib.png)  
 *Delay plot for OAI33 cell showing rising and falling delays across various input slews and output loads.*
 
 **Liberty File**  
-[📄OAI33.lib](output/oai33/oai33.lib)  
+[📄OAI33.lib](designs/OAI33/charlib/lib/gf180mcu_osu_sc_gp9t3v3__OAI33.lib)  
 Includes pin functions, timing arcs, and power tables for integration into digital design flows.
 
 **Key Observations**
