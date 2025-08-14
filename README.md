@@ -526,12 +526,15 @@ Contains cell definition, pin capacitance, function, and detailed timing/power t
 
 **Liberty File**  
 [📄OAI33.lib](designs/OAI33/charlib/lib/gf180mcu_osu_sc_gp9t3v3__OAI33.lib)  
-Includes pin functions, timing arcs, and power tables for integration into digital design flows.
+Contains pin functions, NLDM timing tables (cell_rise/cell_fall and rise/fall transition) and per-pin input capacitance.
 
 **Key Observations**
-- Well-balanced delay characteristics, making it ideal for performance-critical logic paths.
-- Maintains stable delay trend under higher output loads.
-- Energy-efficient due to reduced internal switching in certain logic conditions.
+- Operating point & format: VDD = 3.3 V, 25 °C, NLDM (table_lookup); delay measured at 50%–50%, slew at 20%/80%.
+- Characterization grid: Input slew = 20, 50, 100, 200, 500, 1000 ps; Output load = 4.04, 8.08, 12.12, 16.16 fF (stored as 0.00404–0.01616 pF in the .lib).
+- Logic & arcs: OUT = !((A|B|C) & (D|E|F)); all six inputs (A, B, C, D, E, F) are characterized to OUT.
+- Input capacitance (typ): A 9.20 fF, B 8.83 fF, C 9.19 fF, D 9.31 fF, E 8.94 fF, F 9.31 fF (average ≈ 9.1 fF).
+- Slew & load sensitivity: Delay increases notably with both output load and input slew (e.g., A→OUT fall grows from ~243 ps at 20 ps & 4.04 fF to ~421 ps at 1000 ps & 16.16 fF).
+  
 
 ### MUX4 Timing Characterization
 
