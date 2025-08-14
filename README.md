@@ -276,7 +276,7 @@ This section presents the simulation results for our proposed cell designs. All 
 
 **Conclusion**
 
-The simulation results show that ...
+The AOI33 schematic simulation shows that using critical-path-oriented sizing (PMOS = 3.4/0.3, NMOS = 2.55/0.3) achieves the intended delay target of ≤ 0.3 ns at an FO4 capacitive load of 16.16 fF for all evaluated input slews between 20 ps and 400 ps. This sizing strategy consistently produces lower propagation delays compared to the OSU standard configuration (PMOS = 1.7/0.3, NMOS = 0.85/0.3), which exhibits values approaching or surpassing the specification at slower input transitions. The results highlight that optimizing device dimensions based on the worst-case conduction scenario not only enhances timing performance but also preserves compliance with the design constraints, offering a more reliable solution than the uniform sizing approach.
 
 
 ### OAI33 Simulation
