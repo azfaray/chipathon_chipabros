@@ -604,7 +604,8 @@ The process generates delay plots (rise/fall vs. input slew and output load) and
 ### AOI33 Timing Characterization
 
 **Delay Plot**  
-![AOI33 Schematic](designs/AOI33/charlib/Result_plot/AOI33OUT(fall)TimingRelated_Pin__A.png)
+![AOI33 Delay Plot](designs/AOI33/charlib/Result_plot/AOI33_OUT_(fall)_Timing_A.png)
+
 *Delay plot for AOI33 cell showing rising and falling delays across various input slews and output loads.*
 
 **Liberty File**  
