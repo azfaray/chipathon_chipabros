@@ -539,7 +539,7 @@ Contains pin functions, NLDM timing tables (cell_rise/cell_fall and rise/fall tr
 ### MUX4 Timing Characterization
 
 **Delay Plot**  
-![MUX4 Delay Plot](images/charlib/mux4_delay.png)  
+![MUX4 Delay Plot](designs/MUX4/charlib/MUX4_PlotDelay_CharLib.png) 
 *Delay plot for MUX4 cell showing propagation delay from data and select inputs to output across varying conditions.*
 
 **Liberty File**  
