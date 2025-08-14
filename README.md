@@ -163,7 +163,7 @@ This section presents the simulation results for our proposed cell designs. All 
 <table border="1">
 <thead>
 <tr>
-<th>Capacitif Load</th>
+<th>Capacitif Load (fF)</th>
 <th>Input Slew (ps)</th>
 <th>Case (t_plh)</th>
 <th>Input Configuration (t_plh)</th>
@@ -222,7 +222,7 @@ This section presents the simulation results for our proposed cell designs. All 
 <table border="1">
 <thead>
 <tr>
-<th>Capacitif Load</th>
+<th>Capacitif Load (fF)</th>
 <th>Input Slew (ps)</th>
 <th>Case (t_plh)</th>
 <th>Input Configuration (t_plh)</th>
