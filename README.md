@@ -290,14 +290,6 @@ The AOI33 schematic simulation shows that using critical-path-oriented sizing (P
 
 **Results**
 
-* **Results Critical Path Considered**
-
-  * **PMOS = 5.1/0.3**
-  * **NMOS = 1.7/0.3**
-<table border="1"> <thead> <tr> <th>Capacitive Load (fF)</th> <th>Input Slew (ps)</th> <th>Case (t_plh)</th> <th>Input Configuration (t_plh)</th> <th>t_plh (ps)</th> <th>Case (t_phl)</th> <th>Input Configuration (t_phl)</th> <th>t_phl (ps)</th> <th>t_pd (ps)</th> </tr> </thead> <tbody> <tr> <td rowspan="5">16.16</td> <td>20</td> <td rowspan="5">Worst-Case t_plh (A → OUT)</td> <td rowspan="5">A: 1→0, B=0, C=0, D=1, E=0, F=0</td> <td>210.92</td> <td rowspan="5">Worst-Case t_phl (D → OUT)</td> <td rowspan="5">D: 0→1, A=1, B=0, C=0, E=0, F=0</td> <td>315.68</td> <td>263.300</td> </tr> <tr> <td>50</td> <td>215.81</td> <td>317.04</td> <td>266.425</td> </tr> <tr> <td>100</td> <td>221.98</td> <td>320.47</td> <td>271.225</td> </tr> <tr> <td>200</td> <td>229.91</td> <td>325.56</td> <td>277.735</td> </tr> <tr> <td>400</td> <td>241.14</td> <td>335.63</td> <td>288.385</td> </tr> </tbody> </table>
-
-* **Results Critical Path NOT Considered (OSU Standard)**
-
   * **PMOS = 1.7/0.3**
   * **NMOS = 0.85/0.3**
 <table border="1"> <thead> <tr> <th>Capacitive Load (fF)</th> <th>Input Slew (ps)</th> <th>Case (t_plh)</th> <th>Input Configuration (t_plh)</th> <th>t_plh (ps)</th> <th>Case (t_phl)</th> <th>Input Configuration (t_phl)</th> <th>t_phl (ps)</th> <th>t_pd (ps)</th> </tr> </thead> <tbody> <tr> <td rowspan="5">16.16</td> <td>20</td> <td rowspan="5">Worst-Case t_plh (A → OUT)</td> <td rowspan="5">A: 1→0, B=0, C=0, D=1, E=0, F=0</td> <td>371.04</td> <td rowspan="5">Worst-Case t_phl (D → OUT)</td> <td rowspan="5">D: 0→1, A=1, B=0, C=0, E=0, F=0</td> <td>291.69</td> <td>331.365</td> </tr> <tr> <td>50</td> <td>376.20</td> <td>293.93</td> <td>335.065</td> </tr> <tr> <td>100</td> <td>382.31</td> <td>298.07</td> <td>340.190</td> </tr> <tr> <td>200</td> <td>389.76</td> <td>303.98</td> <td>346.870</td> </tr> <tr> <td>400</td> <td>399.87</td> <td>314.34</td> <td>357.105</td> </tr> </tbody> </table>
