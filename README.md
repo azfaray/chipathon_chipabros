@@ -155,12 +155,15 @@ This section presents the simulation results for our proposed cell designs. All 
 
 **Results**
 
+* **Results Critical Path Considered**
+
 * **PMOS = 3.4/0.3**
 * **NMOS = 2.55/0.3**
 
 <table border="1">
 <thead>
 <tr>
+<th>Capacitif Load</th>
 <th>Input Slew (ps)</th>
 <th>Case (t_plh)</th>
 <th>Input Configuration (t_plh)</th>
@@ -173,6 +176,7 @@ This section presents the simulation results for our proposed cell designs. All 
 </thead>
 <tbody>
 <tr>
+<td rowspan="5">16.16</td>
 <td>20</td>
 <td rowspan="5">Worst-Case t_plh (C → OUT)</td>
 <td rowspan="5">C: 1→0, A=1, B=1, C=1, D=0, E=1</td>
@@ -208,6 +212,67 @@ This section presents the simulation results for our proposed cell designs. All 
 </tr>
 </tbody>
 </table>
+
+
+* **Results Critical Path NOT Considered (OSU Standard)**
+
+  * **PMOS = 1.7/0.3**
+  * **NMOS = 0.85/0.3**
+
+<table border="1">
+<thead>
+<tr>
+<th>Capacitif Load</th>
+<th>Input Slew (ps)</th>
+<th>Case (t_plh)</th>
+<th>Input Configuration (t_plh)</th>
+<th>t_plh (ps)</th>
+<th>Case (t_phl)</th>
+<th>Input Configuration (t_phl)</th>
+<th>t_phl (ps)</th>
+<th>t_pd (ps)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="5">16.16</td>
+<td>20</td>
+<td rowspan="5">Worst-Case t_plh (C → OUT)</td>
+<td rowspan="5">C: 1→0, A=1, B=1, C=1, D=0, E=1</td>
+<td>316.652</td>
+<td rowspan="5">Worst-Case t_phl (F → OUT)</td>
+<td rowspan="5">F: 0→1, A=0, B=0, C=0, D=1, E=1</td>
+<td>247.004</td>
+<td>281.828</td>
+</tr>
+<tr>
+<td>50</td>
+<td>322.008</td>
+<td>249.316</td>
+<td>285.662</td>
+</tr>
+<tr>
+<td>100</td>
+<td>327.465</td>
+<td>252.715</td>
+<td>290.090</td>
+</tr>
+<tr>
+<td>200</td>
+<td>345.422</td>
+<td>254.386</td>
+<td>299.904</td>
+</tr>
+<tr>
+<td>400</td>
+<td>364.154</td>
+<td>256.877</td>
+<td>310.516</td>
+</tr>
+</tbody>
+</table>
+
+
 
 **Conclusion**
 
