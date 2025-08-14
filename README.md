@@ -1,7 +1,7 @@
 > [!IMPORTANT]
-> > **Last Updated: 10 August 2025**
+> > **Last Updated: 14 August 2025**
 > >
-> > Update notes: We have added section 8 (after work distribution in README.md), which contains the results of our schematic simulations.
+> > Update notes: We have added section 9 , which contains the results of our timing characterization using CharLib.
 
 ---
 
