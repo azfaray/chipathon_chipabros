@@ -113,7 +113,7 @@ Our workflow utilizes a combination of open-source and industry-standard EDA too
 * **Schematic Entry:** Xschem
 * **Layout & Verification:** Magic, KLayout, Netgen
 * **Simulation:** NGSpice
-* **Characterization:** We will use **Charlib**, an open-source library characterization tool, to generate the `.lib` (Liberty) timing and power models for our cells.
+* **Characterization:** We will use **Charlib**, an open-source library characterization tool, to generate the `.lib` (Liberty) timing models for our cells.
 
 Our final validation will involve a side-by-side comparison of a benchmark circuit synthesized with the original OSU library versus our new, augmented library to quantitatively measure the PPA improvements.
 
