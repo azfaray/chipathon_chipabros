@@ -543,7 +543,7 @@ Contains pin functions, NLDM timing tables (cell_rise/cell_fall and rise/fall tr
 *Delay plot for MUX4 cell showing propagation delay from data and select inputs to output across varying conditions.*
 
 **Liberty File**  
-[📄MUX4.lib](output/mux4/mux4.lib)  
+[📄MUX4.lib](designs/MUX4/charlib/lib/gf180mcu_osu_sc_gp9t3v3__MUX4.lib) 
 Contains complete multiplexer timing and power characterizations for use in synthesis and STA.
 
 **Key Observations**
