@@ -226,9 +226,6 @@ This section presents the simulation results for our proposed cell designs. All 
   * **NMOS = 0.85/0.3**
 <table border="1"> <thead> <tr> <th>Capacitive Load (fF)</th> <th>Input Slew (ps)</th> <th>Case (t_plh)</th> <th>Input Configuration (t_plh)</th> <th>t_plh (ps)</th> <th>Case (t_phl)</th> <th>Input Configuration (t_phl)</th> <th>t_phl (ps)</th> <th>t_pd (ps)</th> </tr> </thead> <tbody> <tr> <td rowspan="5">16.16</td> <td>20</td> <td rowspan="5">Worst-Case t_plh (A → OUT)</td> <td rowspan="5">A: 1→0, B=0, C=0, D=1, E=0, F=0</td> <td>371.04</td> <td rowspan="5">Worst-Case t_phl (D → OUT)</td> <td rowspan="5">D: 0→1, A=1, B=0, C=0, E=0, F=0</td> <td>291.69</td> <td>331.365</td> </tr> <tr> <td>50</td> <td>376.20</td> <td>293.93</td> <td>335.065</td> </tr> <tr> <td>100</td> <td>382.31</td> <td>298.07</td> <td>340.190</td> </tr> <tr> <td>200</td> <td>389.76</td> <td>303.98</td> <td>346.870</td> </tr> <tr> <td>400</td> <td>399.87</td> <td>314.34</td> <td>357.105</td> </tr> </tbody> </table>
 
-**Conclusion**
-
-All OAI33 results above are measured at a capacitive load of 16.16 fF, which corresponds to FO4 (four times the input capacitance of our 1× inverter). From our characterization, the Cin of the 1× inverter is ~4.04 fF, so FO4 = 4 × 4.04 fF = 16.16 fF. This aligns with our target specification of delay @ FO4 ≤ 0.3 ns in the proposal. With critical-path-oriented sizing (PMOS = 5.1/0.3, NMOS = 1.7/0.3), the OAI33 consistently meets this FO4 delay target across the evaluated input slews and outperforms the default OSU sizing (PMOS = 1.7/0.3, NMOS = 0.85/0.3).
 ### MUX4 Simulation
 
 **Schematic**
@@ -414,7 +411,7 @@ All OAI33 results above are measured at a capacitive load of 16.16 fF, which cor
   </tr>
 </table>
 
-**Conclusion**
+**MUX4 Simulation Conclusion**
 
 The simulation results show that all three sizing variations meet the target delay (≤ 0.3 ns) and leakage (≤ 0.5 nW) specifications. Variation 3 delivers the fastest delay (~104–113 ps), although this variation is still questionable regarding the 1× drive, input capacitance (≤ 0.01 pF), and area (≤ 60 µm²) constraints due to full upsizing. Variation 2 achieves a balanced delay (~145 ps) while reducing the risk of violating capacitance and area limits, making it the preferred choice for meeting all target specifications. Variation 1 meets all limits but has the slowest delay (~160 ps).
 
