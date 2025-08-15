@@ -465,7 +465,7 @@ Contains pin functions, NLDM timing tables (cell_rise/cell_fall and rise/fall tr
 
 **Liberty File**  
 [📄MUX4.lib](designs/MUX4/charlib/lib/gf180mcu_osu_sc_gp9t3v3__MUX4.lib) 
-Contains complete multiplexer timing and power characterizations for use in synthesis and STA.
+Contains complete multiplexer timing characterizations for use in synthesis and STA.
 
 **Key Observations**
 - Operating point & format: VDD = 3.3 V, 25 °C, NLDM (table_lookup); delay measured at 50%–50%, slew at 20%/80%.
