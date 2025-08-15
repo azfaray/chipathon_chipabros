@@ -1,5 +1,4 @@
-** sch_path: /foss/designs/OAI33/OSU/OAI33_osu.sch
-.subckt OAI33_osu VDD A D B E F C OUT VSS
+.subckt OAI33 VDD A D B E F C OUT VSS
 *.iopin VDD
 *.iopin VSS
 *.ipin A
@@ -33,5 +32,5 @@ XM11 net4 E net3 VDD pfet_03v3 L=0.3u W=1.7u nf=1 ad='int((nf+1)/2) * W/nf * 0.1
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
 XM12 net3 D VDD VDD pfet_03v3 L=0.3u W=1.7u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
-.ends OAI33_osu
+.ends OAI33
 
