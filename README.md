@@ -431,13 +431,15 @@ The process generates delay plots (rise/fall vs. input slew and output load) and
 *Delay plot for AOI33 cell showing rising and falling delays across various input slews and output loads.*
 
 **Liberty File**  
-[📄AOI33.lib](designs/AOI33/charlib/lib)  
+[📄AOI33.lib](designs/AOI33/charlib/lib/gf180mcu_osu_sc_gp9t3v3__AOI33.lib)  
 Contains cell definition, pin capacitance, function, and detailed timing/power tables.
 
 **Key Observations**
-- Balanced rise/fall delays across the characterized range.
-- Suitable for complex logic minimization with low delay penalty.
-- Slightly faster fall delay due to pull-down network strength.
+- Operating point & format: VDD = 3.3 V, 25 °C, NLDM (table_lookup); delay measured at 50%–50%, slew at 20%/80%.
+- Characterization grid: Input slew = 20, 50, 100, 200, 500, 1000 ps; Output load = 4.04, 8.08, 12.12, 16.16 fF (stored as 0.00404–0.01616 pF in the .lib).
+- Logic & arcs: OUT = !((A & B & C) | (D & E & F)); all six inputs (A, B, C, D, E, F) are characterized to OUT.
+- Input capacitance (typ): A = 3.301 fF, B = 3.345 fF, C = 3.359 fF, D = 3.299 fF, E = 3.343 fF, F = 3.358 fF (average ≈ 3.34 fF).
+- Slew & load sensitivity: Delay increases notably with both output load and input slew (e.g., C→OUT rise grows from ~236.98 ps at 20 ps & 4.04 fF to ~453.36 ps at 1000 ps & 16.16 fF).
 
 ### OAI33 Timing Characterization
 
