@@ -1,7 +1,7 @@
 > [!IMPORTANT]
 > > **Last Updated: 14 August 2025**
 > >
-> > Update notes: We have added section 9 , which contains the results of our timing characterization using CharLib.
+> > Update notes: We have added section 9 (contains the results of our timing characterization using CharLib) along with our revised specification in section 3
 
 ---
 
@@ -53,7 +53,7 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 | Input Capacitance | &le; 0.01 pF |
 | Leakage Power | &le; 0.5 nW |
 | Area | &le; 50&micro;m&sup2; |
-| Delay @FO4 | &le; 0.3 ns |
+| Delay @FO4 | &le; 0.6 ns |
 
 ### OAI33 (OR-AND-Invert)
 * **Logic Function:** `Y = ~((A | B | C) & (D | E | F))`
@@ -72,7 +72,7 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 | Input Capacitance | &le; 0.01 pF |
 | Leakage Power | &le; 0.5 nW |
 | Area | &le; 50&micro;m&sup2; |
-| Delay @FO4 | &le; 0.3 ns |
+| Delay @FO4 | &le; 0.6 ns |
 
 ### MUX4 (4-to-1 Multiplexer)
 * **Logic Function:** Selects one of four data inputs (`x0`-`x3`) based on two select lines (`C0`, `C1`).
@@ -90,8 +90,8 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 | VDD | `3.3 V` |
 | Input Capacitance | &le; 0.01 pF |
 | Leakage Power | &le; 0.5 nW |
-| Area | &le; 60&micro;m&sup2; |
-| Delay @FO4 | &le; 0.3 ns |
+| Area | &le; 100&micro;m&sup2; |
+| Delay @FO4 | &le; 0.7 ns |
 
 ---
 
