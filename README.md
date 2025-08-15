@@ -551,7 +551,7 @@ Contains complete multiplexer timing and power characterizations for use in synt
 **Key Observations**
 - Operating point & format: VDD = 3.3 V, 25 °C, NLDM (table_lookup); delay measured at 50%–50%, slew at 20%/80%.
 - Characterization grid: Input slew = 20, 50, 100, 200, 500, 1000 ps; Output load = 4.04, 8.08, 12.12, 16.16 fF (stored as 0.00404–0.01616 pF in the .lib).
-- Logic & arcs: OUT = (!SELONE & !SELZERO & A) | (!SELONE & SELZERO & B) | (SELONE & !SELZERO & C) | (SELONE & SELZERO & D); all six inputs (A, B, C, D, SELONE, SELZERO) are characterized to OUT.
-- Input capacitance (typ): A ≈ 2.20 fF, B ≈ 8.62 fF, C ≈ 2.17 fF, D ≈ 8.60 fF, SELONE ≈ 4.85 fF, SELZERO ≈ 6.50 fF.
-- Slew & load sensitivity: Delay increases notably with both output load and input slew (e.g., A→OUT rise grows from ~65 ps at 20 ps & 4.04 fF to ~172 ps at 1000 ps & 16.16 fF; SELZERO→OUT rise grows from ~130 ps to ~280+ ps over same range).
+- Logic & arcs: OUT = (!C1 & !C0 & X0) | (!C1 & C0 & X1) | (C1 & !C0 & X2) | (C1 & C0 & X3); all six inputs (C0, C1, X0, X1, X2, X3) are characterized to OUT.
+- Input capacitance (typ): C0 6.50 fF, C1 4.85 fF, X0 8.17 fF, X1 2.22 fF, X2 8.59 fF, X3 2.22 fF (average ≈ 5.42 fF).
+- Slew & load sensitivity: Delay increases notably with both output load and input slew (e.g., X0→OUT fall grows from ~85.82 ps at 20 ps & 4.04 fF to ~190.67 ps at 1000 ps & 16.16 fF).
 
