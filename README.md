@@ -453,8 +453,9 @@ Contains pin functions, NLDM timing tables (cell_rise/cell_fall and rise/fall tr
 - Operating point & format: VDD = 3.3 V, 25 °C, NLDM (table_lookup); delay measured at 50%–50%, slew at 20%/80%.
 - Characterization grid: Input slew = 20, 50, 100, 200, 500, 1000 ps; Output load = 4.04, 8.08, 12.12, 16.16 fF (stored as 0.00404–0.01616 pF in the .lib).
 - Logic & arcs: OUT = !((A|B|C) & (D|E|F)); all six inputs (A, B, C, D, E, F) are characterized to OUT.
-- Input capacitance (typ): A 9.20 fF, B 8.83 fF, C 9.19 fF, D 9.31 fF, E 8.94 fF, F 9.31 fF (average ≈ 9.1 fF).
-- Slew & load sensitivity: Delay increases notably with both output load and input slew (e.g., A→OUT fall grows from ~243 ps at 20 ps & 4.04 fF to ~421 ps at 1000 ps & 16.16 fF).
+- Per-pin input capacitance (typical): A 3.261 fF, B 3.133 fF, C 3.267 fF, D 3.317 fF, E 3.189 fF, F 3.324 fF (avg ≈ 3.25 fF).
+- Slew & load sensitivity: Example A→OUT (fall) grows from 176.77 ps (20 ps, 4.04 fF) to 388.38 ps (1000 ps, 16.16 fF). Expect similar scaling on other arcs.
+
   
 
 ### MUX4 Timing Characterization
