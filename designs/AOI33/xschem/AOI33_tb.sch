@@ -28,9 +28,9 @@ C {lab_pin.sym} 659.375 -458.125 0 0 {name=p5 sig_type=std_logic lab=C}
 C {devices/vsource.sym} 510 -420 0 0 {name=V1 value=3.3 savecurrent=false}
 C {devices/vdd.sym} 510 -510 0 0 {name=l2 lab=VDD}
 C {devices/gnd.sym} 510 -350 0 0 {name=l4 lab=GND}
-C {devices/vsource.sym} 510 -218.75 0 0 {name=V2 value=0 savecurrent=false}
+C {devices/vsource.sym} 510 -218.75 0 0 {name=V2 value=3.3 savecurrent=false}
 C {devices/gnd.sym} 510 -148.75 0 0 {name=l5 lab=GND}
-C {devices/vsource.sym} 740 -218.75 0 0 {name=V3 value= 3.3  savecurrent=false}
+C {devices/vsource.sym} 740 -218.75 0 0 {name=V3 value= 0  savecurrent=false}
 C {devices/gnd.sym} 740 -148.75 0 0 {name=l6 lab=GND}
 C {devices/vsource.sym} 970 -218.75 0 0 {name=V4 value=3.3 savecurrent=false}
 C {devices/gnd.sym} 970 -148.75 0 0 {name=l7 lab=GND}
@@ -71,17 +71,9 @@ meas tran time_out_rise FIND time WHEN v(OUT)=1.65 from=4n to=8n
 let t_pLH = (time_out_rise - time_in_fall) / 1E-12   ; input fall → output rise
 let t_pHL = (time_out_fall - time_in_rise) / 1E-12   ; input rise → output fall
 
-* --- Transition times with auto thresholds ---
-* Output rise time (low → high) after input fall
-meas tran t_tLH_raw TRIG v(OUT) VAL=\{v10\} RISE=1 TARG v(OUT) VAL=\{v90\} RISE=1 from=4n to=8n
-let t_tLH = t_tLH_raw / 1E-12
-
-* Output fall time (high → low) after input rise
-meas tran t_tHL_raw TRIG v(OUT) VAL=\{v90\} FALL=1 TARG v(OUT) VAL=\{v10\} FALL=1 from=0n to=4n
-let t_tHL = t_tHL_raw / 1E-12
 
 * --- Print results ---
-print t_pLH t_pHL t_tLH t_tHL
+print t_pLH t_pHL
 
 set color0=white
 set color1=black

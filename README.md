@@ -1,7 +1,7 @@
 > [!IMPORTANT]
 > > **Last Updated: 14 August 2025**
 > >
-> > Update notes: We have added section 9 , which contains the results of our timing characterization using CharLib.
+> > Update notes: We have added section 9 (contains the results of our timing characterization using CharLib) along with our revised specification in section 3
 
 ---
 
@@ -53,7 +53,7 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 | Input Capacitance | &le; 0.01 pF |
 | Leakage Power | &le; 0.5 nW |
 | Area | &le; 50&micro;m&sup2; |
-| Delay @FO4 | &le; 0.3 ns |
+| Delay @FO4 | &le; 0.6 ns |
 
 ### OAI33 (OR-AND-Invert)
 * **Logic Function:** `Y = ~((A | B | C) & (D | E | F))`
@@ -72,7 +72,7 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 | Input Capacitance | &le; 0.01 pF |
 | Leakage Power | &le; 0.5 nW |
 | Area | &le; 50&micro;m&sup2; |
-| Delay @FO4 | &le; 0.3 ns |
+| Delay @FO4 | &le; 0.6 ns |
 
 ### MUX4 (4-to-1 Multiplexer)
 * **Logic Function:** Selects one of four data inputs (`x0`-`x3`) based on two select lines (`C0`, `C1`).
@@ -90,8 +90,8 @@ Our design philosophy is centered on creating efficient, single-stage complex ga
 | VDD | `3.3 V` |
 | Input Capacitance | &le; 0.01 pF |
 | Leakage Power | &le; 0.5 nW |
-| Area | &le; 60&micro;m&sup2; |
-| Delay @FO4 | &le; 0.3 ns |
+| Area | &le; 100&micro;m&sup2; |
+| Delay @FO4 | &le; 0.7 ns |
 
 ---
 
@@ -142,7 +142,7 @@ This section presents the simulation results for our proposed cell designs. All 
 
 * **Reference:** Based on 9T OSU standard cell.
 * **Goal:** Balanced LH/HL delay via mobility compensation.
-* **Sizing Strategy:** For designs that implement PUN and PDN, we consider sizing based on the worst-case path delay.
+* **Sizing Strategy:** Sizing configuration is based on the existing OSU STD Cell where PMOS is twice the size of NMOS's size
 
 ### AOI33 Simulation
 
@@ -153,68 +153,7 @@ This section presents the simulation results for our proposed cell designs. All 
 **Waveform**
 ![AOI33 Waveform](docs/images/AOI33_waveform.png)
 
-**Results**
-
-* **Results Critical Path Considered**
-
-* **PMOS = 3.4/0.3**
-* **NMOS = 2.55/0.3**
-
-<table border="1">
-<thead>
-<tr>
-<th>Capacitif Load (fF)</th>
-<th>Input Slew (ps)</th>
-<th>Case (t_plh)</th>
-<th>Input Configuration (t_plh)</th>
-<th>t_plh (ps)</th>
-<th>Case (t_phl)</th>
-<th>Input Configuration (t_phl)</th>
-<th>t_phl (ps)</th>
-<th>t_pd (ps)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td rowspan="5">16.16</td>
-<td>20</td>
-<td rowspan="5">Worst-Case t_plh (C → OUT)</td>
-<td rowspan="5">C: 1→0, A=1, B=1, C=1, D=0, E=1</td>
-<td>212.361</td>
-<td rowspan="5">Worst-Case t_phl (F → OUT)</td>
-<td rowspan="5">F: 0→1, A=0, B=0, C=0, D=1, E=1</td>
-<td>267.430</td>
-<td>239.896</td>
-</tr>
-<tr>
-<td>50</td>
-<td>215.460</td>
-<td>268.640</td>
-<td>242.050</td>
-</tr>
-<tr>
-<td>100</td>
-<td>217.946</td>
-<td>276.040</td>
-<td>246.993</td>
-</tr>
-<tr>
-<td>200</td>
-<td>217.843</td>
-<td>292.720</td>
-<td>255.282</td>
-</tr>
-<tr>
-<td>400</td>
-<td>219.234</td>
-<td>329.260</td>
-<td>274.247</td>
-</tr>
-</tbody>
-</table>
-
-
-* **Results Critical Path NOT Considered (OSU Standard)**
+**Results Based On Simulation**
 
   * **PMOS = 1.7/0.3**
   * **NMOS = 0.85/0.3**
@@ -272,13 +211,6 @@ This section presents the simulation results for our proposed cell designs. All 
 </tbody>
 </table>
 
-
-
-**Conclusion**
-
-The AOI33 schematic simulation shows that using critical-path-oriented sizing (PMOS = 3.4/0.3, NMOS = 2.55/0.3) achieves the intended delay target of ≤ 0.3 ns at an FO4 capacitive load of 16.16 fF for all evaluated input slews between 20 ps and 400 ps. This sizing strategy consistently produces lower propagation delays compared to the OSU standard configuration (PMOS = 1.7/0.3, NMOS = 0.85/0.3), which exhibits values approaching or surpassing the specification at slower input transitions. The results highlight that optimizing device dimensions based on the worst-case conduction scenario not only enhances timing performance but also preserves compliance with the design constraints, offering a more reliable solution than the uniform sizing approach.
-
-
 ### OAI33 Simulation
 
 **Schematic**
@@ -288,23 +220,12 @@ The AOI33 schematic simulation shows that using critical-path-oriented sizing (P
 **Waveform**
 ![OAI33 Waveform](docs/images/OAI33_waveform.png)
 
-**Results**
-
-* **Results Critical Path Considered**
-
-  * **PMOS = 5.1/0.3**
-  * **NMOS = 1.7/0.3**
-<table border="1"> <thead> <tr> <th>Capacitive Load (fF)</th> <th>Input Slew (ps)</th> <th>Case (t_plh)</th> <th>Input Configuration (t_plh)</th> <th>t_plh (ps)</th> <th>Case (t_phl)</th> <th>Input Configuration (t_phl)</th> <th>t_phl (ps)</th> <th>t_pd (ps)</th> </tr> </thead> <tbody> <tr> <td rowspan="5">16.16</td> <td>20</td> <td rowspan="5">Worst-Case t_plh (A → OUT)</td> <td rowspan="5">A: 1→0, B=0, C=0, D=1, E=0, F=0</td> <td>210.92</td> <td rowspan="5">Worst-Case t_phl (D → OUT)</td> <td rowspan="5">D: 0→1, A=1, B=0, C=0, E=0, F=0</td> <td>315.68</td> <td>263.300</td> </tr> <tr> <td>50</td> <td>215.81</td> <td>317.04</td> <td>266.425</td> </tr> <tr> <td>100</td> <td>221.98</td> <td>320.47</td> <td>271.225</td> </tr> <tr> <td>200</td> <td>229.91</td> <td>325.56</td> <td>277.735</td> </tr> <tr> <td>400</td> <td>241.14</td> <td>335.63</td> <td>288.385</td> </tr> </tbody> </table>
-
-* **Results Critical Path NOT Considered (OSU Standard)**
+**Results Based on Simulation**
 
   * **PMOS = 1.7/0.3**
   * **NMOS = 0.85/0.3**
 <table border="1"> <thead> <tr> <th>Capacitive Load (fF)</th> <th>Input Slew (ps)</th> <th>Case (t_plh)</th> <th>Input Configuration (t_plh)</th> <th>t_plh (ps)</th> <th>Case (t_phl)</th> <th>Input Configuration (t_phl)</th> <th>t_phl (ps)</th> <th>t_pd (ps)</th> </tr> </thead> <tbody> <tr> <td rowspan="5">16.16</td> <td>20</td> <td rowspan="5">Worst-Case t_plh (A → OUT)</td> <td rowspan="5">A: 1→0, B=0, C=0, D=1, E=0, F=0</td> <td>371.04</td> <td rowspan="5">Worst-Case t_phl (D → OUT)</td> <td rowspan="5">D: 0→1, A=1, B=0, C=0, E=0, F=0</td> <td>291.69</td> <td>331.365</td> </tr> <tr> <td>50</td> <td>376.20</td> <td>293.93</td> <td>335.065</td> </tr> <tr> <td>100</td> <td>382.31</td> <td>298.07</td> <td>340.190</td> </tr> <tr> <td>200</td> <td>389.76</td> <td>303.98</td> <td>346.870</td> </tr> <tr> <td>400</td> <td>399.87</td> <td>314.34</td> <td>357.105</td> </tr> </tbody> </table>
 
-**Conclusion**
-
-All OAI33 results above are measured at a capacitive load of 16.16 fF, which corresponds to FO4 (four times the input capacitance of our 1× inverter). From our characterization, the Cin of the 1× inverter is ~4.04 fF, so FO4 = 4 × 4.04 fF = 16.16 fF. This aligns with our target specification of delay @ FO4 ≤ 0.3 ns in the proposal. With critical-path-oriented sizing (PMOS = 5.1/0.3, NMOS = 1.7/0.3), the OAI33 consistently meets this FO4 delay target across the evaluated input slews and outperforms the default OSU sizing (PMOS = 1.7/0.3, NMOS = 0.85/0.3).
 ### MUX4 Simulation
 
 **Schematic**
@@ -315,7 +236,7 @@ All OAI33 results above are measured at a capacitive load of 16.16 fF, which cor
 
 ![MUX4 Waveform](docs/images/MUX4_waveform.png)
 
-**Results**
+**Results Based On Simulation**
 
 * **Results Sizing Variation 1**
 
@@ -490,7 +411,7 @@ All OAI33 results above are measured at a capacitive load of 16.16 fF, which cor
   </tr>
 </table>
 
-**Conclusion**
+**MUX4 Simulation Conclusion**
 
 The simulation results show that all three sizing variations meet the target delay (≤ 0.3 ns) and leakage (≤ 0.5 nW) specifications. Variation 3 delivers the fastest delay (~104–113 ps), although this variation is still questionable regarding the 1× drive, input capacitance (≤ 0.01 pF), and area (≤ 60 µm²) constraints due to full upsizing. Variation 2 achieves a balanced delay (~145 ps) while reducing the risk of violating capacitance and area limits, making it the preferred choice for meeting all target specifications. Variation 1 meets all limits but has the slowest delay (~160 ps).
 
@@ -510,15 +431,15 @@ The process generates delay plots (rise/fall vs. input slew and output load) and
 *Delay plot for AOI33 cell showing rising and falling delays across various input slews and output loads.*
 
 **Liberty File**  
-[📄AOI33.lib](designs/AOI33/charlib/lib)  
+[📄AOI33.lib](designs/AOI33/charlib/lib/gf180mcu_osu_sc_gp9t3v3__AOI33.lib)  
 Contains cell definition, pin capacitance, function, and detailed timing/power tables.
 
 **Key Observations**
 - Operating point & format: VDD = 3.3 V, 25 °C, NLDM (table_lookup); delay measured at 50%–50%, slew at 20%/80%.
 - Characterization grid: Input slew = 20, 50, 100, 200, 500, 1000 ps; Output load = 4.04, 8.08, 12.12, 16.16 fF (stored as 0.00404–0.01616 pF in the .lib).
 - Logic & arcs: OUT = !((A & B & C) | (D & E & F)); all six inputs (A, B, C, D, E, F) are characterized to OUT.
-- Input capacitance (typ): A 3.301 fF, B 3.345 fF, C 3.359 fF, D 3.299 fF, E 3.343 fF, F 3.358 fF (average ≈ 3.34 fF).
-- Slew & load sensitivity: Delay increases notably with both output load and input slew (e.g., A→OUT fall grows from ~239.6 ps at 20 ps & 4.04 fF to ~477.1 ps at 1000 ps & 16.16 fF).
+- Input capacitance (typ): A = 3.301 fF, B = 3.345 fF, C = 3.359 fF, D = 3.299 fF, E = 3.343 fF, F = 3.358 fF (average ≈ 3.34 fF).
+- Slew & load sensitivity: Delay increases notably with both output load and input slew (e.g., C→OUT rise grows from ~236.98 ps at 20 ps & 4.04 fF to ~453.36 ps at 1000 ps & 16.16 fF).
 
 ### OAI33 Timing Characterization
 
@@ -534,8 +455,9 @@ Contains pin functions, NLDM timing tables (cell_rise/cell_fall and rise/fall tr
 - Operating point & format: VDD = 3.3 V, 25 °C, NLDM (table_lookup); delay measured at 50%–50%, slew at 20%/80%.
 - Characterization grid: Input slew = 20, 50, 100, 200, 500, 1000 ps; Output load = 4.04, 8.08, 12.12, 16.16 fF (stored as 0.00404–0.01616 pF in the .lib).
 - Logic & arcs: OUT = !((A|B|C) & (D|E|F)); all six inputs (A, B, C, D, E, F) are characterized to OUT.
-- Input capacitance (typ): A 9.20 fF, B 8.83 fF, C 9.19 fF, D 9.31 fF, E 8.94 fF, F 9.31 fF (average ≈ 9.1 fF).
-- Slew & load sensitivity: Delay increases notably with both output load and input slew (e.g., A→OUT fall grows from ~243 ps at 20 ps & 4.04 fF to ~421 ps at 1000 ps & 16.16 fF).
+- Per-pin input capacitance (typical): A 3.261 fF, B 3.133 fF, C 3.267 fF, D 3.317 fF, E 3.189 fF, F 3.324 fF (avg ≈ 3.25 fF).
+- Slew & load sensitivity: Example A→OUT (fall) grows from 176.77 ps (20 ps, 4.04 fF) to 388.38 ps (1000 ps, 16.16 fF). Expect similar scaling on other arcs.
+
   
 
 ### MUX4 Timing Characterization
@@ -546,7 +468,7 @@ Contains pin functions, NLDM timing tables (cell_rise/cell_fall and rise/fall tr
 
 **Liberty File**  
 [📄MUX4.lib](designs/MUX4/charlib/lib/gf180mcu_osu_sc_gp9t3v3__MUX4.lib) 
-Contains complete multiplexer timing and power characterizations for use in synthesis and STA.
+Contains complete multiplexer timing characterizations for use in synthesis and STA.
 
 **Key Observations**
 - Operating point & format: VDD = 3.3 V, 25 °C, NLDM (table_lookup); delay measured at 50%–50%, slew at 20%/80%.

@@ -86,7 +86,7 @@ N 320 -670 320 -640 {lab=#net5}
 N 430 -670 430 -640 {lab=#net5}
 C {symbols/nfet_03v3.sym} 180 -340 0 0 {name=M1
 L=0.3u
-W=2.55u
+W=0.85u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -101,7 +101,7 @@ spiceprefix=X
 C {iopin.sym} 320 -10 0 0 {name=p5 lab=VSS}
 C {symbols/pfet_03v3.sym} 180 -700 0 0 {name=M7
 L=0.3u
-W=3.4u
+W=1.7u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -121,76 +121,6 @@ C {ipin.sym} 100 -740 0 0 {name=p6 lab=B}
 C {ipin.sym} 100 -760 0 0 {name=p7 lab=C}
 C {ipin.sym} 100 -620 2 1 {name=p8 lab=F}
 C {opin.sym} 530 -440 0 0 {name=p15 lab=OUT}
-C {symbols/nfet_03v3.sym} 180 -220 0 0 {name=M2
-L=0.3u
-W=2.55u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
-C {symbols/nfet_03v3.sym} 180 -100 0 0 {name=M3
-L=0.3u
-W=2.55u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
-C {symbols/nfet_03v3.sym} 450 -340 0 1 {name=M4
-L=0.3u
-W=2.55u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
-C {symbols/nfet_03v3.sym} 450 -220 0 1 {name=M5
-L=0.3u
-W=2.55u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
-C {symbols/nfet_03v3.sym} 450 -100 0 1 {name=M6
-L=0.3u
-W=2.55u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
 C {lab_wire.sym} 250 -340 2 0 {name=l2 sig_type=std_logic lab=VSS
 
 }
@@ -230,7 +160,7 @@ C {lab_wire.sym} 490 -100 0 1 {name=l18 sig_type=std_logic lab=F
 }
 C {symbols/pfet_03v3.sym} 300 -700 0 0 {name=M8
 L=0.3u
-W=3.4u
+W=1.7u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -244,7 +174,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 410 -700 0 0 {name=M9
 L=0.3u
-W=3.4u
+W=1.7u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -258,7 +188,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 180 -540 0 0 {name=M10
 L=0.3u
-W=3.4u
+W=1.7u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -272,7 +202,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 300 -540 0 0 {name=M11
 L=0.3u
-W=3.4u
+W=1.7u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -286,7 +216,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 410 -540 0 0 {name=M12
 L=0.3u
-W=3.4u
+W=1.7u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -296,5 +226,75 @@ ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
 nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
 model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 180 -220 0 0 {name=M2
+L=0.3u
+W=0.85u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 180 -100 0 0 {name=M3
+L=0.3u
+W=0.85u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 450 -100 0 1 {name=M4
+L=0.3u
+W=0.85u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 450 -220 0 1 {name=M5
+L=0.3u
+W=0.85u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 450 -340 0 1 {name=M6
+L=0.3u
+W=0.85u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
 spiceprefix=X
 }

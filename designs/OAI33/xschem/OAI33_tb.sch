@@ -41,7 +41,7 @@ C {devices/gnd.sym} -40 10 0 0 {name=l7 lab=GND}
 C {lab_pin.sym} -560 -170 0 0 {name=p7 sig_type=std_logic lab=A}
 C {lab_pin.sym} -310 -160 0 0 {name=p8 sig_type=std_logic lab=B}
 C {lab_pin.sym} -40 -150 0 0 {name=p9 sig_type=std_logic lab=C}
-C {devices/vsource.sym} -470 130 0 0 {name=V5 value="PULSE(0 3.3 2n 20p 20p 8n 16n)" savecurrent=false}
+C {devices/vsource.sym} -470 130 0 0 {name=V5 value="PULSE(0 3.3 2n 20p 20p 5n 10n)" savecurrent=false}
 C {devices/gnd.sym} -470 200 0 0 {name=l8 lab=GND}
 C {devices/vsource.sym} -250 160 0 0 {name=V6 value=0 savecurrent=false}
 C {devices/gnd.sym} -250 230 0 0 {name=l9 lab=GND}
@@ -56,13 +56,13 @@ value="
 .include $::180MCU_MODELS/design.ngspice
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
-C {devices/code_shown.sym} 87.5 -385 0 0 {name=Simulation only_toplevel=true value="
+C {devices/code_shown.sym} 97.5 -385 0 0 {name=Simulation only_toplevel=true value="
 .control
 run
 set color0=white
 set color1=black
 set xbrushwidth=3
-tran 0.01ns 34ns
+tran 0.01ns 22ns
 plot v(OUT) v(D)+4
 .endc
 
@@ -79,4 +79,4 @@ C {gnd.sym} 600 25 0 0 {name=l11 lab=GND}
 C {lab_pin.sym} 372.5 30 0 1 {name=p6 sig_type=std_logic lab=OUT}
 C {lab_pin.sym} 490 12.5 0 0 {name=p14 sig_type=std_logic lab=OUT}
 C {title.sym} -502.5 367.5 0 0 {name=l12 author="Karunia Muda Kurniawan"}
-C {OAI33/Crit_Path/OAI33.sym} 280 30 0 0 {name=x1}
+C {OAI33/OSU/OAI33_osu.sym} 275 30 0 0 {name=x1}
