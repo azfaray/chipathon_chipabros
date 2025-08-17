@@ -1,0 +1,21 @@
+* SPICE3 file created from MUX4.ext - technology: gf180mcuC
+
+.option scale=5n
+
+X0 a_1160_210# a_1670_160# OUT VDD pfet_03v3 ad=34n pd=0.88m as=23.8n ps=0.48m w=340 l=60
+X1 X1 a_250_210# a_590_210# VSS nfet_03v3 ad=22.1n pd=0.6m as=11.9n ps=0.31m w=170 l=60
+X2 X3 a_250_210# a_1160_210# VSS nfet_03v3 ad=22.1n pd=0.6m as=12.8n ps=0.33m w=170 l=60
+X3 X1 a_530_160# a_590_210# VDD pfet_03v3 ad=44.8n pd=0.96m as=23.8n ps=0.48m w=340 l=60
+X4 a_n90_210# a_n340_420# VSS VSS nfet_03v3 ad=17n pd=0.54m as=17n ps=0.54m w=170 l=60
+X5 X3 a_1100_160# a_1160_210# VDD pfet_03v3 ad=44.8n pd=0.96m as=23.8n ps=0.48m w=340 l=60
+X6 a_250_210# a_140_570# VSS VSS nfet_03v3 ad=17n pd=0.54m as=17n ps=0.54m w=170 l=60
+X7 OUT a_1670_160# a_590_210# VSS nfet_03v3 ad=11.9n pd=0.31m as=17n ps=0.54m w=170 l=60
+X8 a_n90_210# a_n340_420# VDD VDD pfet_03v3 ad=40.8n pd=0.92m as=34n ps=0.88m w=340 l=60
+X9 a_250_720# a_140_570# VDD VDD pfet_03v3 ad=34n pd=0.88m as=34n ps=0.88m w=340 l=60
+X10 OUT a_1510_70# a_590_210# VDD pfet_03v3 ad=23.8n pd=0.48m as=34.6n ps=0.9m w=340 l=60
+X11 a_590_210# a_530_160# X0 VSS nfet_03v3 ad=11.9n pd=0.31m as=17n ps=0.54m w=170 l=60
+X12 a_1160_210# a_1100_160# X2 VSS nfet_03v3 ad=12.8n pd=0.33m as=17n ps=0.54m w=170 l=60
+X13 a_590_210# a_250_210# X0 VDD pfet_03v3 ad=23.8n pd=0.48m as=34.6n ps=0.9m w=340 l=60
+X14 a_1160_210# a_1510_70# OUT VSS nfet_03v3 ad=24.1n pd=0.64m as=11.9n ps=0.31m w=170 l=60
+X15 a_1160_210# a_250_210# X2 VDD pfet_03v3 ad=23.8n pd=0.48m as=34.6n ps=0.9m w=340 l=60
+C0 VDD VSS 5.40151f **FLOATING
