@@ -1,0 +1,16 @@
+magic
+tech gf180mcuD
+timestamp 1755535493
+use AOI33  AOI33_0
+timestamp 1755277100
+transform 1 0 268 0 1 1
+box 106 0 235 127
+use MUX4  MUX4_0
+timestamp 1755527599
+transform 1 0 159 0 1 1
+box -34 0 215 127
+use OAI33  OAI33_0
+timestamp 1755523573
+transform 1 0 58 0 1 4
+box -62 -3 67 124
+<< end >>
