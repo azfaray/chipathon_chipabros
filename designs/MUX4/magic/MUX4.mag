@@ -1,6 +1,6 @@
 magic
 tech gf180mcuC
-timestamp 1755444264
+timestamp 1755485871
 << nwell >>
 rect -34 63 215 127
 << nmos >>
@@ -462,13 +462,23 @@ rect 118 18 126 19
 rect 197 18 205 19
 << labels >>
 rlabel space -34 0 215 127 1 C1
-rlabel metal2 -34 59 -26 65 1 C1
-rlabel metal2 -34 72 -26 79 1 C0
-rlabel via1 44 100 50 106 1 X0
-rlabel via1 85 74 91 80 1 X1
-rlabel via1 101 74 107 80 1 X2
-rlabel via1 142 74 148 80 1 X3
-rlabel via1 173 58 179 64 1 OUT
-rlabel nwell -34 113 22 127 1 VDD
-rlabel metal1 -34 0 22 14 1 VSS
+port 2 n
+rlabel metal2 173 58 179 64 0 OUT
+port 6 nsew
+rlabel metal2 142 74 148 80 0 X3
+port 5 nsew
+rlabel metal2 44 100 50 106 0 X0
+port 1 nsew
+rlabel metal2 85 74 91 80 0 X1
+port 3 nsew
+rlabel metal2 101 74 107 80 0 X2
+port 4 nsew
+rlabel metal2 -34 72 -26 79 0 C0
+port 7 nsew
+rlabel metal2 -34 59 -26 65 0 C1
+port 2 nsew
+rlabel metal1 -12 113 2 127 0 VDD
+port 8 nsew
+rlabel metal1 -12 0 3 14 0 VSS
+port 9 nsew
 << end >>
