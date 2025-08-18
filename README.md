@@ -426,12 +426,12 @@ The process generates delay plots (rise/fall vs. input slew and output load) and
 ### AOI33 Timing Characterization
 
 **Delay Plot**  
-![AOI33 Delay Plot](designs/AOI33/charlib/Result_plot/AOI33_OUT_(fall)_Timing_A.png)
+![AOI33 Delay Plot](designs/AOI33/Charlib/Result_plot/AOI33_OUT_(fall)_Timing_A.png)
 
 *Delay plot for AOI33 cell showing rising and falling delays across various input slews and output loads.*
 
 **Liberty File**  
-[📄AOI33.lib](designs/AOI33/charlib/lib/gf180mcu_osu_sc_gp9t3v3__AOI33.lib)  
+[📄AOI33.lib](designs/AOI33/Charlib/lib/gf180mcu_osu_sc_gp9t3v3__AOI33.lib)  
 Contains cell definition, pin capacitance, function, and detailed timing/power tables.
 
 **Key Observations**
@@ -444,7 +444,7 @@ Contains cell definition, pin capacitance, function, and detailed timing/power t
 ### OAI33 Timing Characterization
 
 **Delay Plot**  
-![OAI33 Delay Plot](designs/OAI33/charlib/OAI33_PlotDelay_CharLib.png)  
+![OAI33 Delay Plot](designs/OAI33/Charlib/OAI33_PlotDelay_CharLib.png)  
 *Delay plot for OAI33 cell showing rising and falling delays across various input slews and output loads.*
 
 **Liberty File**  
