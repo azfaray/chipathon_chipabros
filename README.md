@@ -448,7 +448,7 @@ Contains cell definition, pin capacitance, function, and detailed timing/power t
 *Delay plot for OAI33 cell showing rising and falling delays across various input slews and output loads.*
 
 **Liberty File**  
-[📄OAI33.lib](designs/OAI33/charlib/lib/gf180mcu_osu_sc_gp9t3v3__OAI33.lib)  
+[📄OAI33.lib](designs/OAI33/Charlib/lib/gf180mcu_osu_sc_gp9t3v3__OAI33.lib)  
 Contains pin functions, NLDM timing tables (cell_rise/cell_fall and rise/fall transition) and per-pin input capacitance.
 
 **Key Observations**
