@@ -1,0 +1,19 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1755280510
+<< error_s >>
+rect 2770 210 2820 223
+use AOI33  AOI33_0
+timestamp 1755277100
+transform 1 0 2710 0 1 0
+box 1060 0 2350 1270
+use MUX4  MUX4_0
+timestamp 1755278724
+transform 1 0 340 0 1 0
+box -340 0 2150 1270
+use OAI33  OAI33_0
+timestamp 1755280173
+transform 1 0 3110 0 1 30
+box -620 -30 670 1240
+<< end >>
