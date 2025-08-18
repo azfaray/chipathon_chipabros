@@ -1,4 +1,4 @@
-** sch_path: /foss/designs/chipabros/AOI33_OSU/AOI33_OSU.sch
+** sch_path: /foss/designs/chipabros/AOI33_OSU/AOI33.sch
 .subckt AOI33 VDD C B A F E D OUT VSS
 *.iopin VSS
 *.iopin VDD
