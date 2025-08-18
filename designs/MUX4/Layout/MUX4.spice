@@ -1,0 +1,28 @@
+* ==========================================================
+* Subcircuit Definition for MUX4 (GF180MCU)
+* Based on the provided netlist
+* ==========================================================
+
+.subckt MUX4 OUT X3 X2 X1 X0 C1 C0 VDD VSS
+
+    .option scale=5n
+
+    M0 a_1160_210# a_1670_160# OUT VDD pfet_03v3 AD=34n PD=0.88m AS=23.8n PS=0.48m W=340 L=60
+    M1 X1 a_250_210# a_590_210# VSS nfet_03v3 AD=22.1n PD=0.6m AS=11.9n PS=0.31m W=170 L=60
+    M2 X3 a_250_210# a_1160_210# VSS nfet_03v3 AD=22.1n PD=0.6m AS=12.8n PS=0.33m W=170 L=60
+    M3 X1 C0 a_590_210# VDD pfet_03v3 AD=44.8n PD=0.96m AS=23.8n PS=0.48m W=340 L=60
+    M4 a_n90_210# C1 VSS VSS nfet_03v3 AD=17n PD=0.54m AS=17n PS=0.54m W=170 L=60
+    M5 X3 C0 a_1160_210# VDD pfet_03v3 AD=44.8n PD=0.96m AS=23.8n PS=0.48m W=340 L=60
+    M6 a_250_210# C0 VSS VSS nfet_03v3 AD=17n PD=0.54m AS=17n PS=0.54m W=170 L=60
+    M7 OUT a_1670_160# a_590_210# VSS nfet_03v3 AD=11.9n PD=0.31m AS=17n PS=0.54m W=170 L=60
+    M8 a_n90_210# C1 VDD VDD pfet_03v3 AD=40.8n PD=0.92m AS=34n PS=0.88m W=340 L=60
+    M9 a_250_720# C0 VDD VDD pfet_03v3 AD=34n PD=0.88m AS=34n PS=0.88m W=340 L=60
+    M10 OUT a_n90_210# a_590_210# VDD pfet_03v3 AD=23.8n PD=0.48m AS=34.6n PS=0.9m W=340 L=60
+    M11 a_590_210# C0 X0 VSS nfet_03v3 AD=11.9n PD=0.31m AS=17n PS=0.54m W=170 L=60
+    M12 a_1160_210# C0 X2 VSS nfet_03v3 AD=12.8n PD=0.33m AS=17n PS=0.54m W=170 L=60
+    M13 a_590_210# a_250_210# X0 VDD pfet_03v3 AD=23.8n PD=0.48m AS=34.6n PS=0.9m W=340 L=60
+    M14 a_1160_210# a_n90_210# OUT VSS nfet_03v3 AD=24.1n PD=0.64m AS=11.9n PS=0.31m W=170 L=60
+    M15 a_1160_210# a_250_210# X2 VDD pfet_03v3 AD=23.8n PD=0.48m AS=34.6n PS=0.9m W=340 L=60
+    C_parasitic VDD VSS 5.40672f
+
+.ends MUX4

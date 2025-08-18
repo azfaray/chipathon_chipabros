@@ -1,0 +1,41 @@
+*====================================================
+* Testbench untuk MUX4 (GF180MCU 3.3V)
+*====================================================
+
+* --- Include model PDK GF180 ---
+.include "/foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice"
+.lib "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" typical
+
+* --- Include subckt MUX4 ---
+.include "MUX4.spice"
+
+* --- Power supply ---
+Vdd VDD 0 3.3
+Vss VSS 0 0
+
+* --- Input ---
+Vx0 X0 0 0
+Vx1 X1 0 0
+Vx2 X2 0 3.3
+Vx3 X3 0 0
+
+* --- Selector inputs (C0, C1) ---
+Vc0 C0 0 PULSE(0 3.3 0n 0.5n 0.5n 20n 40n)
+Vc1 C1 0 PULSE(0 3.3 20n 0.5n 0.5n 40n 80n)
+
+* --- Device Under Test (DUT) ---
+Xdut OUT X3 X2 X1 X0 C1 C0 VDD VSS MUX4
+
+* --- Output load ---
+Cload OUT 0 16.16f
+
+* --- Simulation setup ---
+.tran 1n 200n
+
+.control
+run
+plot v(out) v(c1)+4 v(c0)+8 v(x0)+12 v(x1)+16 v(x2)+20 v(x3)+24
+.endc
+
+.end
+
