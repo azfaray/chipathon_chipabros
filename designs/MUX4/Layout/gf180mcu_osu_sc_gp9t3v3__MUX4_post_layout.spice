@@ -1,0 +1,52 @@
+* SPICE3 file created from gf180mcu_osu_sc_gp9t3v3__MUX4.ext - technology: gf180mcuD
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+
+.option scale=5n
+
+.subckt MUX4 X0 X1 X2 X3 C0 C1 OUT VDD VSS
+
+X0 a_90_n40# C0 VDD VDD pfet_03v3 ad=34n pd=0.88m as=34n ps=0.88m w=340 l=60
+X1 a_1830_n40# C1 VSS VSS nfet_03v3 ad=17n pd=0.54m as=17n ps=0.54m w=170 l=60
+X2 a_510_n40# a_1830_n40# OUT VSS nfet_03v3 ad=22.1n pd=0.6m as=19.55n ps=0.4m w=170 l=60
+X3 X2 a_90_n40# a_1190_n40# VSS nfet_03v3 ad=22.1n pd=0.6m as=19.55n ps=0.4m w=170 l=60
+X4 X0 C0 a_510_n40# VDD pfet_03v3 ad=54.4n pd=1m as=23.8n ps=0.48m w=340 l=60
+X5 OUT a_1830_n40# a_1190_n40# VDD pfet_03v3 ad=39.1n pd=0.57m as=68n ps=1.08m w=340 l=60
+X6 a_510_n40# C0 X1 VSS nfet_03v3 ad=11.9n pd=0.31m as=34n ps=0.74m w=170 l=60
+X7 a_1190_n40# a_90_n40# X3 VDD pfet_03v3 ad=39.1n pd=0.57m as=68n ps=1.08m w=340 l=60
+X8 a_90_n40# C0 VSS VSS nfet_03v3 ad=17n pd=0.54m as=17n ps=0.54m w=170 l=60
+X9 a_1830_n40# C1 VDD VDD pfet_03v3 ad=34n pd=0.88m as=34n ps=0.88m w=340 l=60
+X10 a_510_n40# C1 OUT VDD pfet_03v3 ad=61.2n pd=1.04m as=39.1n ps=0.57m w=340 l=60
+X11 X2 C0 a_1190_n40# VDD pfet_03v3 ad=44.2n pd=0.94m as=39.1n ps=0.57m w=340 l=60
+X12 X0 a_90_n40# a_510_n40# VSS nfet_03v3 ad=22.1n pd=0.6m as=11.9n ps=0.31m w=170 l=60
+X13 OUT C1 a_1190_n40# VSS nfet_03v3 ad=19.55n pd=0.4m as=34n ps=0.74m w=170 l=60
+X14 a_510_n40# a_90_n40# X1 VDD pfet_03v3 ad=23.8n pd=0.48m as=68n ps=1.08m w=340 l=60
+X15 a_1190_n40# C0 X3 VSS nfet_03v3 ad=19.55n pd=0.4m as=34n ps=0.74m w=170 l=60
+C0 VDD VSS 5.48671f
+
+.ends MUX4
+
+VDD VDD 0 3.3
+VSS VSS 0 0
+
+VC0 C0 0 PULSE(0 3.3 0ns 0.5ns 0.5ns 19.98ns 40ns)
+VC1 C1 0 PULSE(0 3.3 0ns 0.5ns 0.5ns 39.98ns 80ns)
+
+VX0 X0 0 PULSE(0 3.3 0ns 0.5ns 0.5ns 9.98ns 20ns)
+VX1 X1 0 PULSE(0 3.3 0ns 0.5ns 0.5ns 4.98ns 10ns)
+VX2 X2 0 3.3
+VX3 X3 0 0
+
+* DUT
+Xdut X0 X1 X2 X3 C0 C1 OUT VDD VSS MUX4
+
+* Simulation
+.tran 0.1n 100n
+
+.control
+run
+plot out x0+4 x1+8 x2+12 x3+16 C0+20 C1+24
+.endc
+
+.end
