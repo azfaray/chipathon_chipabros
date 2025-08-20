@@ -18,4 +18,4 @@ X12 a_1160_210# C0 X1 VSS nfet_03v3 ad=12.8n pd=0.33m as=17n ps=0.54m w=170 l=60
 X13 a_590_210# a_250_210# X3 VDD pfet_03v3 ad=23.8n pd=0.48m as=34.6n ps=0.9m w=340 l=60
 X14 a_1160_210# a_n90_210# OUT VSS nfet_03v3 ad=24.1n pd=0.64m as=11.9n ps=0.31m w=170 l=60
 X15 a_1160_210# a_250_210# X1 VDD pfet_03v3 ad=23.8n pd=0.48m as=34.6n ps=0.9m w=340 l=60
-C0 VDD VSS 5.40677f
+C0 VDD VSS 5.40677f **FLOATING
