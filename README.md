@@ -1,10 +1,3 @@
-> [!IMPORTANT]
-> > **Last Updated: 14 August 2025**
-> >
-> > Update notes: We have added section 9 (contains the results of our timing characterization using CharLib) along with our revised specification in section 3
-
----
-
 # SSCS Chipathon 2025 - Digital Building Blocks: OSU Library Extension
 
 **Track:** Digital Building Blocks  
@@ -135,3 +128,10 @@ Our final validation will involve a side-by-side comparison of a benchmark circu
 | **M. Azfar A. Yusup** | MUX4 design schematic and layout |
 
 ---
+
+## 📌 Project Navigation
+
+- [📊 Proposal Slides](https://docs.google.com/presentation/d/1v9lPLxBa9qHRbZV_CV6P1FUU5SN9hJzpeSoeTjV56Tg/edit?usp=drivesdk)  
+- [📈 Progress Tracker](https://docs.google.com/spreadsheets/d/1gvapkJXg_ImWxQAozkYPL38OUkyevosKkCzLBFcKEBQ/edit?usp=drivesdk)  
+- [🧪 Simulation Review Slides](https://docs.google.com/presentation/d/1V8_BFR1FSCCmT4916aNXWuhUHF478kxk2631uU5oGBo/edit?usp=drivesdk)  
+- [📐 Pin Out & Estimated Size](https://docs.google.com/presentation/d/1NifhGzR2XYhibaWUZmmjV7YqtPg-2YSyupI2YV45xNY/edit?usp=drivesdk)  
