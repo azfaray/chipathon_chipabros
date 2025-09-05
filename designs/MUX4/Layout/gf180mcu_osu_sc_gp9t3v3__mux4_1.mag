@@ -1,6 +1,6 @@
 magic
 tech gf180mcuC
-timestamp 1756902939
+timestamp 1757058211
 << nwell >>
 rect -34 63 215 127
 << nmos >>
@@ -161,52 +161,52 @@ rect 159 74 164 100
 rect 176 74 181 104
 rect 196 74 201 104
 << psubdiff >>
-rect -26 11 -15 13
+rect -26 11 -15 14
 rect -26 6 -23 11
 rect -18 6 -15 11
-rect -26 4 -15 6
-rect 8 11 19 13
+rect -26 2 -15 6
+rect 8 11 19 14
 rect 8 6 11 11
 rect 16 6 19 11
-rect 8 4 19 6
-rect 34 11 45 13
+rect 8 2 19 6
+rect 34 11 45 14
 rect 34 6 37 11
 rect 42 6 45 11
-rect 34 4 45 6
-rect 56 11 67 13
+rect 34 2 45 6
+rect 56 11 67 14
 rect 56 6 59 11
 rect 64 6 67 11
-rect 138 11 149 13
-rect 56 4 67 6
+rect 138 11 149 14
+rect 56 2 67 6
 rect 138 6 141 11
 rect 146 6 149 11
 rect 196 11 207 13
-rect 138 4 149 6
+rect 138 2 149 6
 rect 196 6 199 11
 rect 204 6 207 11
-rect 196 4 207 6
+rect 196 1 207 6
 << nsubdiff >>
-rect -26 120 -15 122
-rect -26 115 -23 120
-rect -18 115 -15 120
-rect -26 113 -15 115
-rect 8 120 19 122
+rect -23 120 -12 123
+rect -23 115 -20 120
+rect -15 115 -12 120
+rect -23 113 -12 115
+rect 8 120 19 123
 rect 8 115 11 120
 rect 16 115 19 120
 rect 8 113 19 115
-rect 33 120 44 122
-rect 127 120 138 122
+rect 33 120 44 123
+rect 127 120 138 123
 rect 33 115 36 120
 rect 41 115 44 120
 rect 33 113 44 115
 rect 127 115 130 120
 rect 135 115 138 120
 rect 127 113 138 115
-rect 164 120 175 122
+rect 164 120 175 123
 rect 164 115 167 120
 rect 172 115 175 120
 rect 164 113 175 115
-rect 195 120 206 122
+rect 195 120 206 123
 rect 195 115 198 120
 rect 203 115 206 120
 rect 195 113 206 115
@@ -218,7 +218,7 @@ rect 59 6 64 11
 rect 141 6 146 11
 rect 199 6 204 11
 << nsubdiffcont >>
-rect -23 115 -18 120
+rect -20 115 -15 120
 rect 11 115 16 120
 rect 36 115 41 120
 rect 130 115 135 120
@@ -279,7 +279,7 @@ rect 73 38 79 46
 rect 110 45 125 50
 rect 110 38 116 45
 rect 130 38 136 45
-rect -15 15 -9 21
+rect -15 16 -9 21
 rect 19 16 25 21
 rect 53 16 59 21
 rect 73 11 79 21
@@ -319,8 +319,8 @@ rect 207 69 213 75
 rect 188 45 194 51
 << metal1 >>
 rect -34 120 215 127
-rect -34 115 -23 120
-rect -18 115 11 120
+rect -34 115 -20 120
+rect -15 115 11 120
 rect 16 115 36 120
 rect 41 115 130 120
 rect 135 115 167 120
@@ -494,8 +494,6 @@ rect 204 19 206 25
 rect 118 18 126 19
 rect 197 18 205 19
 << labels >>
-rlabel metal1 -23 115 -18 120 1 VDD
-port 1 n default bidirectional
 rlabel metal2 -19 59 -13 65 7 C1
 port 2 w default input
 rlabel metal2 16 59 22 65 7 C0
@@ -512,4 +510,6 @@ rlabel metal2 85 74 91 80 0 X2
 port 8 nsew default input
 rlabel metal2 44 100 50 106 7 X3
 port 9 w default input
+rlabel metal1 -20 115 -15 120 1 VDD
+port 1 n default bidirectional
 << end >>
