@@ -1,0 +1,118 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO gf180mcu_osu_sc_gp9t3v3__aoi33_1
+  CLASS BLOCK ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__aoi33_1 ;
+  ORIGIN -5.300 0.000 ;
+  SIZE 6.450 BY 6.350 ;
+  PIN F
+    DIRECTION INPUT ;
+    ANTENNAGATEAREA 0.765000 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5.750 2.950 6.250 3.250 ;
+      LAYER Metal2 ;
+        RECT 5.750 2.900 6.250 3.300 ;
+    END
+  END F
+  PIN E
+    DIRECTION INPUT ;
+    ANTENNAGATEAREA 0.765000 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 6.800 2.300 7.300 2.600 ;
+      LAYER Metal2 ;
+        RECT 6.800 2.250 7.300 2.650 ;
+    END
+  END E
+  PIN D
+    DIRECTION INPUT ;
+    ANTENNAGATEAREA 0.765000 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 7.650 2.300 8.150 2.600 ;
+      LAYER Metal2 ;
+        RECT 7.650 2.250 8.150 2.650 ;
+    END
+  END D
+  PIN A
+    DIRECTION INPUT ;
+    ANTENNAGATEAREA 0.765000 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 8.900 2.300 9.400 2.600 ;
+      LAYER Metal2 ;
+        RECT 8.900 2.250 9.400 2.650 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    ANTENNAGATEAREA 0.765000 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 9.750 2.300 10.250 2.600 ;
+      LAYER Metal2 ;
+        RECT 9.750 2.250 10.250 2.650 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    ANTENNAGATEAREA 0.765000 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 10.600 2.300 11.100 2.600 ;
+      LAYER Metal2 ;
+        RECT 10.600 2.250 11.100 2.650 ;
+    END
+  END C
+  PIN OUT
+    DIRECTION OUTPUT ;
+    ANTENNADIFFAREA 2.252500 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5.850 3.900 6.100 5.300 ;
+        RECT 7.550 3.900 7.800 4.800 ;
+        RECT 5.850 3.600 7.950 3.900 ;
+        RECT 7.550 3.200 7.800 3.600 ;
+        RECT 11.250 3.200 11.750 3.250 ;
+        RECT 7.550 2.950 11.750 3.200 ;
+        RECT 8.400 1.050 8.650 2.950 ;
+      LAYER Metal2 ;
+        RECT 11.250 2.900 11.750 3.300 ;
+    END
+  END OUT
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Nwell ;
+        RECT 5.300 3.150 11.750 6.350 ;
+      LAYER Metal1 ;
+        RECT 5.300 5.650 11.750 6.350 ;
+        RECT 9.250 4.100 9.500 5.650 ;
+        RECT 10.950 3.600 11.200 5.650 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5.850 0.700 6.100 1.900 ;
+        RECT 10.950 0.700 11.200 1.900 ;
+        RECT 5.300 0.000 11.750 0.700 ;
+    END
+  END VSS
+  OBS
+      LAYER Metal1 ;
+        RECT 6.700 5.050 8.650 5.300 ;
+        RECT 6.700 4.150 6.950 5.050 ;
+        RECT 8.400 3.850 8.650 5.050 ;
+        RECT 10.100 3.850 10.350 5.300 ;
+        RECT 8.400 3.600 10.350 3.850 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__aoi33_1
+END LIBRARY
+

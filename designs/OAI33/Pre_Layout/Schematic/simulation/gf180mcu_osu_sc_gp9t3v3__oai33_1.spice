@@ -1,0 +1,16 @@
+** sch_path: /foss/designs/OAI33/Pre Layout/Schematic/gf180mcu_osu_sc_gp9t3v3__oai33_1.sch
+.subckt gf180mcu_osu_sc_gp9t3v3__oai33_1 VDD A D B E F C OUT VSS
+*.PININFO VDD:B VSS:B A:I OUT:O B:I C:I F:I D:I E:I
+M1 OUT A net5 VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M7 OUT C net2 VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+M2 OUT B net5 VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M3 OUT C net5 VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M4 net5 D VSS VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M5 net5 E VSS VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M6 net5 F VSS VSS nfet_03v3 L=0.3u W=0.85u nf=1 m=1
+M8 net2 B net1 VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+M9 net1 A VDD VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+M10 OUT F net4 VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+M11 net4 E net3 VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+M12 net3 D VDD VDD pfet_03v3 L=0.3u W=1.7u nf=1 m=1
+.ends
