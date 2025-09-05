@@ -1,8 +1,8 @@
 magic
 tech gf180mcuD
-timestamp 1755774721
+timestamp 1757090262
 << nwell >>
-rect 106 63 235 127
+rect 106 63 241 127
 << nmos >>
 rect 125 21 131 38
 rect 142 21 148 38
@@ -186,14 +186,14 @@ rect 180 46 186 52
 rect 197 46 203 52
 rect 214 46 220 52
 << metal1 >>
-rect 106 120 235 127
+rect 106 120 241 127
 rect 106 115 124 120
 rect 129 115 148 120
 rect 153 115 172 120
 rect 177 115 196 120
 rect 201 115 220 120
-rect 225 115 235 120
-rect 106 113 235 115
+rect 225 115 241 120
+rect 106 113 241 115
 rect 117 104 122 106
 rect 134 104 173 106
 rect 139 101 168 104
@@ -231,14 +231,14 @@ rect 220 46 222 52
 rect 168 21 173 23
 rect 219 36 224 38
 rect 219 14 224 23
-rect 106 12 235 14
+rect 106 12 241 14
 rect 106 7 124 12
 rect 129 7 148 12
 rect 153 7 172 12
 rect 177 7 196 12
 rect 201 7 220 12
-rect 225 7 235 12
-rect 106 0 235 7
+rect 225 7 241 12
+rect 106 0 241 7
 << via1 >>
 rect 117 59 123 65
 rect 227 59 233 65
@@ -279,10 +279,6 @@ rect 212 45 222 46
 << labels >>
 rlabel via1 121 60 121 60 7 F
 port 1 w default input
-rlabel via1 140 49 140 49 7 E
-port 2 w default input
-rlabel via1 157 49 157 49 0 D
-port 3 nsew default input
 rlabel via1 182 49 182 49 0 A
 port 4 nsew default input
 rlabel via1 200 49 200 49 3 B
@@ -295,4 +291,8 @@ rlabel psubdiffcont 126 10 126 10 5 VSS
 port 9 s default bidirectional
 rlabel nsubdiffcont 127 117 127 117 1 VDD
 port 8 n default bidirectional
+rlabel via1 157 49 157 49 0 D
+port 3 nsew default input
+rlabel via1 140 49 140 49 7 E
+port 2 w default input
 << end >>
