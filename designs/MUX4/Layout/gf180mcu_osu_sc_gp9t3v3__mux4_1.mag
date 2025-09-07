@@ -1,8 +1,8 @@
 magic
 tech gf180mcuC
-timestamp 1757058211
+timestamp 1757223838
 << nwell >>
-rect -34 63 215 127
+rect -34 63 220 127
 << nmos >>
 rect -15 21 -9 38
 rect 19 21 25 38
@@ -161,30 +161,30 @@ rect 159 74 164 100
 rect 176 74 181 104
 rect 196 74 201 104
 << psubdiff >>
-rect -26 11 -15 14
-rect -26 6 -23 11
-rect -18 6 -15 11
-rect -26 2 -15 6
-rect 8 11 19 14
-rect 8 6 11 11
-rect 16 6 19 11
-rect 8 2 19 6
-rect 34 11 45 14
-rect 34 6 37 11
-rect 42 6 45 11
-rect 34 2 45 6
-rect 56 11 67 14
-rect 56 6 59 11
-rect 64 6 67 11
-rect 138 11 149 14
-rect 56 2 67 6
+rect -28 12 -13 14
+rect -28 7 -23 12
+rect -18 7 -13 12
+rect -28 5 -13 7
+rect 1 12 16 14
+rect 1 7 6 12
+rect 11 7 16 12
+rect 1 5 16 7
+rect 27 12 42 14
+rect 27 7 32 12
+rect 37 7 42 12
+rect 27 5 42 7
+rect 54 12 69 14
+rect 54 7 59 12
+rect 64 7 69 12
+rect 138 11 151 14
+rect 54 5 69 7
 rect 138 6 141 11
-rect 146 6 149 11
-rect 196 11 207 13
-rect 138 2 149 6
-rect 196 6 199 11
-rect 204 6 207 11
-rect 196 1 207 6
+rect 146 6 151 11
+rect 195 11 210 13
+rect 138 4 151 6
+rect 195 6 199 11
+rect 204 6 210 11
+rect 195 4 210 6
 << nsubdiff >>
 rect -23 120 -12 123
 rect -23 115 -20 120
@@ -211,10 +211,10 @@ rect 195 115 198 120
 rect 203 115 206 120
 rect 195 113 206 115
 << psubdiffcont >>
-rect -23 6 -18 11
-rect 11 6 16 11
-rect 37 6 42 11
-rect 59 6 64 11
+rect -23 7 -18 12
+rect 6 7 11 12
+rect 32 7 37 12
+rect 59 7 64 12
 rect 141 6 146 11
 rect 199 6 204 11
 << nsubdiffcont >>
@@ -285,8 +285,7 @@ rect 53 16 59 21
 rect 73 11 79 21
 rect 110 16 116 21
 rect 130 11 136 21
-rect 73 7 136 11
-rect 151 11 155 65
+rect 151 19 155 65
 rect 187 63 193 72
 rect 205 69 207 75
 rect 213 69 215 75
@@ -306,9 +305,12 @@ rect 194 45 196 51
 rect 167 38 173 44
 rect 186 43 196 45
 rect 187 38 193 43
+rect 151 16 157 19
 rect 167 16 173 21
+rect 73 7 136 11
+rect 153 11 157 16
 rect 187 11 193 21
-rect 151 7 193 11
+rect 153 7 193 11
 << polycontact >>
 rect -19 59 -13 65
 rect 16 59 22 65
@@ -318,15 +320,15 @@ rect 129 59 135 65
 rect 207 69 213 75
 rect 188 45 194 51
 << metal1 >>
-rect -34 120 215 127
+rect -34 120 220 127
 rect -34 115 -20 120
 rect -15 115 11 120
 rect 16 115 36 120
 rect 41 115 130 120
 rect 135 115 167 120
 rect 172 115 198 120
-rect 203 115 215 120
-rect -34 113 215 115
+rect 203 115 220 120
+rect -34 113 220 115
 rect -23 104 -18 113
 rect -23 72 -18 74
 rect -4 104 1 106
@@ -405,15 +407,17 @@ rect 199 36 204 58
 rect 176 21 181 23
 rect 196 19 198 25
 rect 204 19 206 25
-rect -34 11 215 14
-rect -34 6 -23 11
-rect -18 6 11 11
-rect 16 6 37 11
-rect 42 6 59 11
-rect 64 6 141 11
+rect -34 12 220 14
+rect -34 7 -23 12
+rect -18 7 6 12
+rect 11 7 32 12
+rect 37 7 59 12
+rect 64 11 220 12
+rect 64 7 141 11
+rect -34 6 141 7
 rect 146 6 199 11
-rect 204 6 215 11
-rect -34 0 215 6
+rect 204 6 220 11
+rect -34 0 220 6
 << via1 >>
 rect -19 59 -13 65
 rect 44 100 50 106
@@ -498,8 +502,6 @@ rlabel metal2 -19 59 -13 65 7 C1
 port 2 w default input
 rlabel metal2 16 59 22 65 7 C0
 port 3 w default input
-rlabel metal1 -23 6 -18 11 5 VSS
-port 4 s default bidirectional
 rlabel metal2 142 74 148 80 3 X0
 port 5 e default input
 rlabel metal2 101 74 107 80 0 X1
@@ -512,4 +514,6 @@ rlabel metal2 44 100 50 106 7 X3
 port 9 w default input
 rlabel metal1 -20 115 -15 120 1 VDD
 port 1 n default bidirectional
+rlabel metal1 -23 7 -18 12 5 VSS
+port 4 s default bidirectional
 << end >>
