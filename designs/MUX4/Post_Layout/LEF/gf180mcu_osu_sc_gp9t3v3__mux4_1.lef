@@ -6,15 +6,15 @@ MACRO gf180mcu_osu_sc_gp9t3v3__mux4_1
   CLASS BLOCK ;
   FOREIGN gf180mcu_osu_sc_gp9t3v3__mux4_1 ;
   ORIGIN 1.700 0.000 ;
-  SIZE 12.450 BY 6.350 ;
+  SIZE 12.700 BY 6.350 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
     PORT
       LAYER Nwell ;
-        RECT -1.700 3.150 10.750 6.350 ;
+        RECT -1.700 3.150 11.000 6.350 ;
       LAYER Metal1 ;
-        RECT -1.700 5.650 10.750 6.350 ;
+        RECT -1.700 5.650 11.000 6.350 ;
         RECT -1.150 3.600 -0.900 5.650 ;
         RECT 0.550 3.600 0.800 5.650 ;
     END
@@ -60,7 +60,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__mux4_1
       LAYER Metal1 ;
         RECT -1.150 0.700 -0.900 1.900 ;
         RECT 0.550 0.700 0.800 1.900 ;
-        RECT -1.700 0.000 10.750 0.700 ;
+        RECT -1.700 0.000 11.000 0.700 ;
     END
   END VSS
   PIN X0
